@@ -1,0 +1,70 @@
+﻿
+using LegumEz.Infrastructure.Persistance.DAL.Cultures;
+
+namespace LegumEz.WebApi.Tests.Builders.Cultures
+{
+    internal class DALCultureBuilder
+    {
+        private Guid _id;
+        private string _name;
+        private ConditionGermination _conditionGermination;
+        private ConditionCroissance _conditionCroissance;
+
+        public DALCultureBuilder WithRandomId()
+        {
+            _id = Guid.NewGuid();
+
+            return this;
+        }
+
+        public DALCultureBuilder WithName(string name)
+        {
+            _name = name;
+
+            return this;
+        }
+
+        public DALCultureBuilder WithDefaultValidConditionGermination()
+        {
+            var temperatureMinimale = new Temperature() { Valeur = 10, Unite = UniteTemperature.Celsius };
+            var temperatureOptimale = new Temperature() { Valeur = 20, Unite = UniteTemperature.Celsius };
+            var tempsDeLevee = new Temps() { Valeur = 1, Unite = UniteDeTemps.Jours };
+
+            _conditionGermination = new ConditionGermination()
+            {
+                TemperatureMinimale = temperatureMinimale,
+                TemperatureOptimale = temperatureOptimale,
+                TempsDeLevee = tempsDeLevee
+            };
+
+            return this;
+        }
+        
+        public DALCultureBuilder WithDefaultValidConditionCroissance()
+        {
+            var temperatureMinimale = new Temperature() { Valeur = 10, Unite = UniteTemperature.Celsius };
+            var temperatureOptimale = new Temperature() { Valeur = 20, Unite = UniteTemperature.Celsius };
+            var tempsDeCroissance = new Temps() { Valeur = 1, Unite = UniteDeTemps.Mois };
+
+            _conditionCroissance = new ConditionCroissance()
+            {
+                TemperatureMinimale = temperatureMinimale,
+                TemperatureOptimale = temperatureOptimale,
+                TempsDeCroissance = tempsDeCroissance
+            };
+
+            return this;
+        }
+
+        public Culture Build()
+        {
+            return new Culture()
+            {
+                Id = _id,
+                Nom = _name,
+                ConditionGermination = _conditionGermination,
+                ConditionCroissance = _conditionCroissance
+            };  
+        }
+    }
+}

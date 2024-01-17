@@ -8,18 +8,11 @@ namespace LegumEz.Infrastructure.Persistance.Configuration
 {
     public class ApplicationDbContext : DbContext
     {
-        private readonly ConnectionStrings _connectionStrings;
 
         public DbSet<Culture> Cultures { get; set; }
 
-        public ApplicationDbContext(IOptions<ConnectionStrings> connectionStrings)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            _connectionStrings = connectionStrings.Value;
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionStrings.LegumEzDb);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

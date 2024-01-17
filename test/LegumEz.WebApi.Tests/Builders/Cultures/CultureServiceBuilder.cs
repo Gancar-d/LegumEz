@@ -1,36 +1,39 @@
 ﻿using LegumEz.Application.Cultures;
-using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
-using Moq;
+using LegumEz.Infrastructure.Persistance.Configuration;
+using LegumEz.Infrastructure.Persistance.Repositories;
+using LegumEz.WebApi.Tests.Builders.DbContext;
+using LegumEz.WebApi.Tests.Builders.Mapper;
 
 namespace LegumEz.WebApi.Tests.Builders.Cultures
 {
     internal class CultureServiceBuilder
     {
-        private Mock<ICultureRepository> _cultureRepositoryMock;
+        private ApplicationDbContext _dbContext;
 
         public CultureServiceBuilder()
         {
-            _cultureRepositoryMock = new Mock<ICultureRepository>();
+            _dbContext = new DbContextBuilder()
+                .WithUsingInMemoryDatabase()
+                .Build();
         }
 
         public CultureServiceBuilder WithAllCultures()
         {
-            var allCultures = new List<Culture>
+            var allCultures = new List<Infrastructure.Persistance.DAL.Cultures.Culture>
             {
-                new CultureBuilder()
+                new DALCultureBuilder()
                 .WithRandomId()
                 .WithName("Tomate")
                 .WithDefaultValidConditionGermination()
                 .WithDefaultValidConditionCroissance()
                 .Build(),
-                new CultureBuilder()
+                new DALCultureBuilder()
                 .WithRandomId()
                 .WithName("Carotte")
                 .WithDefaultValidConditionGermination()
                 .WithDefaultValidConditionCroissance()
                 .Build(),
-                new CultureBuilder()
+                new DALCultureBuilder()
                 .WithRandomId()
                 .WithName("Salade")
                 .WithDefaultValidConditionGermination()
@@ -38,16 +41,17 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
                 .Build(),
             };
 
-            _cultureRepositoryMock
-                .Setup(x => x.FindAll())
-                .Returns(allCultures);
+            _dbContext.Cultures.AddRange(allCultures);
+            _dbContext.SaveChanges();
 
             return this;
         }
 
         public ICultureService Build()
         {
-            return new CultureService(_cultureRepositoryMock.Object);
+            var cultureRepository = new CultureRepository(_dbContext, MapperBuilder.Build());
+
+            return new CultureService(cultureRepository);
         }
     }
 }
