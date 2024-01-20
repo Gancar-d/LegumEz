@@ -17,6 +17,13 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
             return this;
         }
 
+        public DALCultureBuilder WithId(Guid id)
+        {
+            _id = id;
+
+            return this;
+        }
+        
         public DALCultureBuilder WithName(string name)
         {
             _name = name;

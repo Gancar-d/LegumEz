@@ -47,7 +47,48 @@ namespace LegumEz.WebApi.Tests.Cultures
             CheckThatCulturesAreReturned(expectedCultures, response);
         }
 
-        private static void CheckThatCulturesAreReturned(List<CultureDto> expectedCultures, ActionResult<IEnumerable<CultureDto>> response)
+        [Fact]
+        public void Return_expected_Culture_giving_Id()
+        {
+            //-- Arrange ----------------------------------------------------------
+            var expectedCulture = new CultureDto(Guid.NewGuid(), "carotte");
+
+            var specifiedCulture = new DomainCultureBuilder()
+                .WithId(expectedCulture.Id)
+                .WithNom(expectedCulture.Nom)
+                .WithDefaultValidConditionGermination()
+                .WithDefaultValidConditionCroissance()
+                .Build();
+
+            var cultureService = new CultureServiceBuilder()
+                .WithSpecifiedCulture(specifiedCulture)
+                .Build();
+
+            var cultureController = new CultureController(_logger, _mapper, cultureService);
+
+            //-- Act --------------------------------------------------------------
+            var response = cultureController.GetCulture(expectedCulture.Id);
+
+            //-- Assert -----------------------------------------------------------
+            CheckThatACultureIsReturnedGivingId(response, expectedCulture);
+        }
+
+        private static void CheckThatACultureIsReturnedGivingId(ActionResult<CultureDto> response,
+            CultureDto expectedCulture)
+        {
+            var okResult = response.Result as OkObjectResult;
+
+            using (new AssertionScope())
+            {
+                okResult?.CheckIsOk200();
+
+                okResult?.Value.Should().NotBeNull();
+                okResult?.Value.Should().BeEquivalentTo(expectedCulture);
+            }
+        }
+
+        private static void CheckThatCulturesAreReturned(List<CultureDto> expectedCultures,
+            ActionResult<IEnumerable<CultureDto>> response)
         {
             var okResult = response.Result as OkObjectResult;
 
