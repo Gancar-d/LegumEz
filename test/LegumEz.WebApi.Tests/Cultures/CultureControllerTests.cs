@@ -2,14 +2,14 @@ using AutoMapper;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using LegumEz.Application.Cultures;
-using LegumEz.Domain.Cultures;
+using LegumEz.Infrastructure.Persistance.DAL.Cultures;
 using LegumEz.WebApi.Controllers;
 using LegumEz.WebApi.Tests.ActionResultHelpers;
 using LegumEz.WebApi.Tests.Builders.Cultures;
+using LegumEz.WebApi.Tests.Builders.DbContext;
 using LegumEz.WebApi.Tests.Builders.Logger;
 using LegumEz.WebApi.Tests.Builders.Mapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.ResponseCaching;
 using Microsoft.Extensions.Logging;
 
 namespace LegumEz.WebApi.Tests.Cultures
@@ -19,17 +19,56 @@ namespace LegumEz.WebApi.Tests.Cultures
         private readonly ILogger<CultureController> _logger;
         private readonly IMapper _mapper;
 
+        private readonly Guid _specifiedCultureId;
+
         public CultureControllerShould()
         {
             _logger = new LoggerBuilder<CultureController>().Build();
             _mapper = MapperBuilder.Build();
+            _specifiedCultureId = Guid.NewGuid();
+            
+            InitDb();
+        }
+
+        private void InitDb()
+        {
+            using var dbContext = new DbContextBuilder()
+                .WithUsingInMemoryDatabase()
+                .Build();
+            
+            dbContext.Database.EnsureDeleted();
+            
+            var allCultures = new List<Culture>
+            {
+                new DALCultureBuilder()
+                    .WithId(_specifiedCultureId)
+                    .WithName("Carotte")
+                    .WithDefaultValidConditionGermination()
+                    .WithDefaultValidConditionCroissance()
+                    .Build(),
+                new DALCultureBuilder()
+                    .WithRandomId()
+                    .WithName("Tomate")
+                    .WithDefaultValidConditionGermination()
+                    .WithDefaultValidConditionCroissance()
+                    .Build(),
+                new DALCultureBuilder()
+                    .WithRandomId()
+                    .WithName("Salade")
+                    .WithDefaultValidConditionGermination()
+                    .WithDefaultValidConditionCroissance()
+                    .Build(),
+            };
+
+            dbContext.Cultures.AddRange(allCultures);
+            dbContext.SaveChanges();
         }
 
         [Fact]
         public void Return_all_Culture_stored_in_database()
         {
             //-- Arrange ----------------------------------------------------------
-            var cultureService = new CultureServiceBuilder().WithAllCultures().Build();
+            var cultureService = new CultureServiceBuilder().WithInMemoryDbContext().Build();
 
             var cultureController = new CultureController(_logger, _mapper, cultureService);
 
@@ -51,23 +90,16 @@ namespace LegumEz.WebApi.Tests.Cultures
         public void Return_expected_Culture_giving_Id()
         {
             //-- Arrange ----------------------------------------------------------
-            var expectedCulture = new CultureDto(Guid.NewGuid(), "carotte");
-
-            var specifiedCulture = new DomainCultureBuilder()
-                .WithId(expectedCulture.Id)
-                .WithNom(expectedCulture.Nom)
-                .WithDefaultValidConditionGermination()
-                .WithDefaultValidConditionCroissance()
-                .Build();
-
             var cultureService = new CultureServiceBuilder()
-                .WithSpecifiedCulture(specifiedCulture)
+                .WithInMemoryDbContext()
                 .Build();
 
             var cultureController = new CultureController(_logger, _mapper, cultureService);
 
+            var expectedCulture = new CultureDto(_specifiedCultureId, "Carotte");
+            
             //-- Act --------------------------------------------------------------
-            var response = cultureController.GetCulture(expectedCulture.Id);
+            var response = cultureController.GetCulture(_specifiedCultureId);
 
             //-- Assert -----------------------------------------------------------
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
