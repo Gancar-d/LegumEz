@@ -19,13 +19,13 @@ namespace LegumEz.WebApi.Tests.Cultures
         private readonly ILogger<CultureController> _logger;
         private readonly IMapper _mapper;
 
-        private readonly Guid _specifiedCultureId;
+        private readonly Guid _requestedCultureId;
 
         public CultureControllerShould()
         {
             _logger = new LoggerBuilder<CultureController>().Build();
             _mapper = MapperBuilder.Build();
-            _specifiedCultureId = Guid.NewGuid();
+            _requestedCultureId = Guid.NewGuid();
             
             InitDb();
         }
@@ -41,7 +41,7 @@ namespace LegumEz.WebApi.Tests.Cultures
             var allCultures = new List<Culture>
             {
                 new DALCultureBuilder()
-                    .WithId(_specifiedCultureId)
+                    .WithId(_requestedCultureId)
                     .WithName("Carotte")
                     .WithDefaultValidConditionGermination()
                     .WithDefaultValidConditionCroissance()
@@ -96,10 +96,10 @@ namespace LegumEz.WebApi.Tests.Cultures
 
             var cultureController = new CultureController(_logger, _mapper, cultureService);
 
-            var expectedCulture = new CultureDto(_specifiedCultureId, "Carotte");
+            var expectedCulture = new CultureDto(_requestedCultureId, "Carotte");
             
             //-- Act --------------------------------------------------------------
-            var response = cultureController.GetCulture(_specifiedCultureId);
+            var response = cultureController.GetCulture(_requestedCultureId);
 
             //-- Assert -----------------------------------------------------------
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
