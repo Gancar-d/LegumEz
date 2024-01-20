@@ -31,15 +31,18 @@ namespace LegumEz.WebApi.Controllers
         }
 
         [HttpGet("{cultureId}")]
-        public ActionResult<CultureDto> GetCulture(int cultureId)
+        public ActionResult<CultureDto> GetCulture(Guid cultureId)
         {
-            return Ok();
+            var culture = _cultureService.GetCultureById(cultureId);
+
+            var responseData = _mapper.Map<CultureDto>(culture);
+            return Ok(responseData);
         }
 
         [HttpGet("{cultureId}/{localisation}/Periode")]
         public ActionResult<int> GetPeriodePlantation(int cultureId, string localisation)
         {
-            return Ok();
+            throw new NotImplementedException();
         }
     }
 }

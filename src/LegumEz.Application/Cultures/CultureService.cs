@@ -20,5 +20,10 @@ namespace LegumEz.Application.Cultures
         {
             return _cultureRepository.FindAll();
         }
+
+        public Culture GetCultureById(Guid cultureId)
+        {
+            return _cultureRepository.FindById(cultureId);
+        }
     }
 }
