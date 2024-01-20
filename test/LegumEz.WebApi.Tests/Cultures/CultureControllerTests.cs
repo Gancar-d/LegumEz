@@ -105,6 +105,41 @@ namespace LegumEz.WebApi.Tests.Cultures
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
         }
 
+        [Fact]
+        public async Task Return_best_Periode_giving_a_culture_Id_and_a_Localisation()
+        {
+            //-- Arrange ----------------------------------------------------------
+            var cultureService = new CultureServiceBuilder()
+                .WithPredictionMeteo()
+                .WithInMemoryDbContext()
+                .Build();
+
+            var cultureController = new CultureController(_logger, _mapper, cultureService);
+
+            const string requestedLocalisation = "Montpellier";
+            var expectedMoisPlantation = 4;
+            
+            //-- Act --------------------------------------------------------------
+            var response = await cultureController.GetMoisPlantation(_requestedCultureId, requestedLocalisation);
+
+            //-- Assert -----------------------------------------------------------
+            CheckThatReturnedPeriodeIsExpectedOne(response, expectedMoisPlantation);
+        }
+
+        private static void CheckThatReturnedPeriodeIsExpectedOne(ActionResult<int> response, int expectedMoisPlantation)
+        {
+            var okResult = response.Result as OkObjectResult;
+
+            using (new AssertionScope())
+            {
+                okResult?.CheckIsOk200();
+
+                okResult?.Value.Should().NotBeNull();
+                okResult?.Value.Should().BeEquivalentTo(expectedMoisPlantation);
+            }
+        }
+
+
         private static void CheckThatACultureIsReturnedGivingId(ActionResult<CultureDto> response,
             CultureDto expectedCulture)
         {
