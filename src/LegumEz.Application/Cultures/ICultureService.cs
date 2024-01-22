@@ -7,5 +7,6 @@ namespace LegumEz.Application.Cultures
     {
         IEnumerable<Culture> GetCultures();
         Culture GetCultureById(Guid cultureId);
+        Task<int> GetMoisPlantationForCultureAndLocalisation(Guid cultureId, string localisation);
     }
 }
