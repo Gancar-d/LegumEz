@@ -39,10 +39,12 @@ namespace LegumEz.WebApi.Controllers
             return Ok(responseData);
         }
 
-        [HttpGet("{cultureId}/{localisation}/Periode")]
-        public ActionResult<int> GetPeriodePlantation(int cultureId, string localisation)
+        [HttpGet("{cultureId}/{localisation}/MoisPlantation")]
+        public async Task<ActionResult<int>> GetMoisPlantation(Guid cultureId, string localisation)
         {
-            throw new NotImplementedException();
+            var meilleurMoisDePlantation = await _cultureService.GetMoisPlantationForCultureAndLocalisation(cultureId, localisation);
+            
+            return Ok(meilleurMoisDePlantation);
         }
     }
 }
