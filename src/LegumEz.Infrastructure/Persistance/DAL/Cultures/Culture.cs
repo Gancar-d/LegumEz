@@ -1,6 +1,4 @@
-﻿using LegumEz.Domain.Entity;
-
-namespace LegumEz.Infrastructure.Persistance.DAL.Cultures
+﻿namespace LegumEz.Infrastructure.Persistance.DAL.Cultures
 {
     public class Culture
     {

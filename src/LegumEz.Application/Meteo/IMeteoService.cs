@@ -1,4 +1,4 @@
-using LegumEz.Domain.Entity;
+using LegumEz.Domain.ConditionsMeteos;
 
 namespace LegumEz.Application.Meteo;
 

@@ -1,9 +1,8 @@
 using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
 
-namespace LegumEz.Domain.Tests.CultureTests
+namespace LegumEz.Domain.Tests.Cultures
 {
-    public class Culture_Should
+    public class CultureShould
     {
         [Fact]
         public void SetName_WhenCreated()

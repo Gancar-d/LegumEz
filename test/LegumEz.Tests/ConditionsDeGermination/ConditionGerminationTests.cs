@@ -1,9 +1,8 @@
 ﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
 
-namespace LegumEz.Domain.Tests.ConditionGerminationTests
+namespace LegumEz.Domain.Tests.ConditionsDeGermination
 {
-    public class ConditionGermination_Should
+    public class ConditionGerminationShould
     {
         [Fact]
         public void ThrowException_IfTemperatureMinimaleIsNull()

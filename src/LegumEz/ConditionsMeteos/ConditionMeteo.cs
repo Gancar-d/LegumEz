@@ -1,6 +1,6 @@
 ﻿using LegumEz.Domain.Cultures;
 
-namespace LegumEz.Domain.Entity
+namespace LegumEz.Domain.ConditionsMeteos
 {
     public record ConditionMeteo
     {
