@@ -1,7 +1,6 @@
 using LegumEz.Application.Configuration;
 using LegumEz.Application.Mapping;
-using LegumEz.Infrastructure.Options;
-using LegumEz.Infrastructure.Persistance.Configuration;
+using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
 using LegumEz.Infrastructure.Persistance.Seeder;
 
