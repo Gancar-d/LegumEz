@@ -1,5 +1,6 @@
 ﻿using LegumEz.Domain.Cultures;
 using LegumEz.Infrastructure.Options;
+using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
 using LegumEz.Infrastructure.Persistance.Seeder;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace LegumEz.Infrastructure.Persistance.Configuration
+namespace LegumEz.Infrastructure.Configuration
 {
     public static class InfrastructureConfiguration
     {
