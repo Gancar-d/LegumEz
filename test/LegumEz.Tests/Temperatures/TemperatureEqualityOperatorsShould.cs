@@ -1,9 +1,8 @@
 ﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
 
-namespace LegumEz.Domain.Tests.TemperatureTests
+namespace LegumEz.Domain.Tests.Temperatures
 {
-    public class TemperatureEqualityOperatorsTests
+    public class TemperatureEqualityOperatorsShould
     {
         [Fact]
         public void ReturnTrue_WhenEqual()

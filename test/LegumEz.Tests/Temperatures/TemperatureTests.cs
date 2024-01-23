@@ -1,9 +1,8 @@
 ﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
 
-namespace LegumEz.Domain.Tests.TemperatureTests
+namespace LegumEz.Domain.Tests.Temperatures
 {
-    public class Temperature_Should
+    public class TemperatureShould
     {
         [Fact]
         public void SetUnite_WhenCreated()

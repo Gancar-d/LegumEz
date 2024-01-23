@@ -1,7 +1,7 @@
 ﻿using LegumEz.Application.Cultures;
 using LegumEz.Application.Meteo;
+using LegumEz.Domain.ConditionsMeteos;
 using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
 using LegumEz.WebApi.Tests.Builders.DbContext;
@@ -13,14 +13,14 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
     internal class CultureServiceBuilder
     {
         private ApplicationDbContext? _dbContext;
-        private IMeteoService _meteoService;
+        private IMeteoService _meteoService = new Mock<IMeteoService>().Object;
 
         public CultureServiceBuilder WithInMemoryDbContext()
         {
             _dbContext = new DbContextBuilder()
                 .WithUsingInMemoryDatabase()
                 .Build();
-
+            
             return this;
         }
 

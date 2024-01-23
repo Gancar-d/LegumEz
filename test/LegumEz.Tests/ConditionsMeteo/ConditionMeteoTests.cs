@@ -1,9 +1,9 @@
-﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.Entity;
+﻿using LegumEz.Domain.ConditionsMeteos;
+using LegumEz.Domain.Cultures;
 
-namespace LegumEz.Domain.Tests.ConditionMeteoTests
+namespace LegumEz.Domain.Tests.ConditionsMeteo
 {
-    public class ConditionMeteo_Should
+    public class ConditionMeteoShould
     {
         [Fact]
         public void SetTemperatureMinimale_WhenCreated()

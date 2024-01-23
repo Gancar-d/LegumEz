@@ -1,6 +1,4 @@
-﻿using LegumEz.Domain.Entity;
-
-namespace LegumEz.Domain.Cultures
+﻿namespace LegumEz.Domain.Cultures
 {
     public record ConditionCroissance
     {
