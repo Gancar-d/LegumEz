@@ -1,5 +1,5 @@
-﻿using LegumEz.Domain.ConditionsMeteos;
-using LegumEz.Domain.Cultures;
+﻿using LegumEz.Domain.Cultures;
+using LegumEz.Domain.PredictionsMeteos;
 
 namespace LegumEz.Domain.Tests.ConditionsMeteo
 {
@@ -12,7 +12,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = new Temperature(20, UniteTemperature.Celsius);
             var date = new DateTime(2020, 1, 1);
 
-            var conditionMeteo = new ConditionMeteo(temperatureMinimale, temperatureMaximale, date);
+            var conditionMeteo = new PredictionMeteo(temperatureMinimale, temperatureMaximale, date);
 
             Assert.Equal(temperatureMinimale, conditionMeteo.TemperatureMinimale);
         }
@@ -24,7 +24,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = new Temperature(20, UniteTemperature.Celsius);
             var date = new DateTime(2020, 1, 1);
 
-            var conditionMeteo = new ConditionMeteo(temperatureMinimale, temperatureMaximale, date);
+            var conditionMeteo = new PredictionMeteo(temperatureMinimale, temperatureMaximale, date);
 
             Assert.Equal(temperatureMaximale, conditionMeteo.TemperatureMaximale);
         }
@@ -36,7 +36,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = new Temperature(20, UniteTemperature.Celsius);
             var date = new DateTime(2020, 1, 1);
 
-            var conditionMeteo = new ConditionMeteo(temperatureMinimale, temperatureMaximale, date);
+            var conditionMeteo = new PredictionMeteo(temperatureMinimale, temperatureMaximale, date);
 
             Assert.Equal(15, conditionMeteo.TemperatureMoyenne.Valeur);
         }
@@ -48,7 +48,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = new Temperature(20, UniteTemperature.Celsius);
             var date = new DateTime(2020, 1, 1);
 
-            var conditionMeteo = new ConditionMeteo(temperatureMinimale, temperatureMaximale, date);
+            var conditionMeteo = new PredictionMeteo(temperatureMinimale, temperatureMaximale, date);
 
             Assert.Equal(date, conditionMeteo.Date);
         }
@@ -62,7 +62,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = valeurTemperatureMaximale.HasValue ? new Temperature(valeurTemperatureMaximale.Value, UniteTemperature.Celsius) : null;
             var date = new DateTime(2020, 1, 1);
 
-            Assert.Throws<ArgumentNullException>(() => new ConditionMeteo(temperatureMinimale, temperatureMaximale, date));
+            Assert.Throws<ArgumentNullException>(() => new PredictionMeteo(temperatureMinimale, temperatureMaximale, date));
         }
 
         [Fact]
@@ -72,7 +72,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
             var temperatureMaximale = new Temperature(10, UniteTemperature.Celsius);
             var date = new DateTime(2020, 1, 1);
 
-            Assert.Throws<ArgumentException>(() => new ConditionMeteo(temperatureMinimale, temperatureMaximale, date));
+            Assert.Throws<ArgumentException>(() => new PredictionMeteo(temperatureMinimale, temperatureMaximale, date));
         }
     }
 }

@@ -72,11 +72,11 @@ namespace LegumEz.WebApi.Tests.Cultures
 
             var cultureController = new CultureController(_logger, _mapper, cultureService);
 
-            var expectedCultures = new List<CultureDto>
+            var expectedCultures = new List<SimpleCultureDto>
             {
-                new CultureDto(Guid.NewGuid(), "Tomate"),
-                new CultureDto(Guid.NewGuid(), "Carotte"),
-                new CultureDto(Guid.NewGuid(), "Salade"),
+                new SimpleCultureDto(Guid.NewGuid(), "Tomate"),
+                new SimpleCultureDto(Guid.NewGuid(), "Carotte"),
+                new SimpleCultureDto(Guid.NewGuid(), "Salade"),
             };
 
             //-- Act --------------------------------------------------------------
@@ -96,13 +96,43 @@ namespace LegumEz.WebApi.Tests.Cultures
 
             var cultureController = new CultureController(_logger, _mapper, cultureService);
 
-            var expectedCulture = new CultureDto(_requestedCultureId, "Carotte");
-            
+            var expectedCulture = CreateExpectedCulture();
+
             //-- Act --------------------------------------------------------------
             var response = cultureController.GetCulture(_requestedCultureId);
 
             //-- Assert -----------------------------------------------------------
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
+        }
+
+        private DetailedCultureDto CreateExpectedCulture()
+        {
+            var temperatureMinimale = new TemperatureDto() { Valeur = 10, Unite = Domain.Cultures.UniteTemperature.Celsius };
+            var temperatureOptimale = new TemperatureDto() { Valeur = 20, Unite = Domain.Cultures.UniteTemperature.Celsius };
+            var tempsDeLevee = new TempsDto() { Valeur = 1, Unite = Domain.Cultures.UniteDeTemps.Jours };
+            var tempsDeCroissance = new TempsDto() { Valeur = 1, Unite = Domain.Cultures.UniteDeTemps.Mois };
+            
+            var conditionDeGermination = new ConditionGerminationDto()
+            {
+                TemperatureMinimale = temperatureMinimale,
+                TemperatureOptimale = temperatureOptimale,
+                TempsDeLevee = tempsDeLevee
+            };
+
+            var conditionDeCroissance = new ConditionCroissanceDto()
+            {
+                TemperatureMinimale = temperatureMinimale,
+                TemperatureOptimale = temperatureOptimale,
+                TempsDeCroissance = tempsDeCroissance
+            };
+            
+            var expectedCulture = new DetailedCultureDto() {
+                Id = _requestedCultureId, 
+                Nom = "Carotte",
+                ConditionCroissance = conditionDeCroissance,
+                ConditionGermination = conditionDeGermination
+            };
+            return expectedCulture;
         }
 
         [Fact]
@@ -140,8 +170,8 @@ namespace LegumEz.WebApi.Tests.Cultures
         }
 
 
-        private static void CheckThatACultureIsReturnedGivingId(ActionResult<CultureDto> response,
-            CultureDto expectedCulture)
+        private static void CheckThatACultureIsReturnedGivingId(ActionResult<DetailedCultureDto> response,
+            DetailedCultureDto expectedDetailedCulture)
         {
             var okResult = response.Result as OkObjectResult;
 
@@ -150,12 +180,12 @@ namespace LegumEz.WebApi.Tests.Cultures
                 okResult?.CheckIsOk200();
 
                 okResult?.Value.Should().NotBeNull();
-                okResult?.Value.Should().BeEquivalentTo(expectedCulture);
+                okResult?.Value.Should().BeEquivalentTo(expectedDetailedCulture);
             }
         }
 
-        private static void CheckThatCulturesAreReturned(List<CultureDto> expectedCultures,
-            ActionResult<IEnumerable<CultureDto>> response)
+        private static void CheckThatCulturesAreReturned(List<SimpleCultureDto> expectedCultures,
+            ActionResult<IEnumerable<SimpleCultureDto>> response)
         {
             var okResult = response.Result as OkObjectResult;
 

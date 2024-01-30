@@ -1,15 +1,15 @@
 ﻿using LegumEz.Domain.Cultures;
 
-namespace LegumEz.Domain.ConditionsMeteos
+namespace LegumEz.Domain.PredictionsMeteos
 {
-    public record ConditionMeteo
+    public record PredictionMeteo
     {
         public Temperature TemperatureMinimale { get; }
         public Temperature TemperatureMaximale { get; }
         public Temperature TemperatureMoyenne { get; }
         public DateTime Date { get; }
 
-        public ConditionMeteo(Temperature temperatureMinimale,
+        public PredictionMeteo(Temperature temperatureMinimale,
             Temperature temperatureMaximale,
             DateTime date)
         {
