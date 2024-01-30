@@ -1,8 +1,8 @@
-using LegumEz.Domain.ConditionsMeteos;
+using LegumEz.Domain.PredictionsMeteos;
 
 namespace LegumEz.Application.Meteo;
 
 public interface IMeteoService
 {
-     Task<IEnumerable<ConditionMeteo>> GetPredictionsMeteoForLocalisation(string localisation);
+     Task<IEnumerable<PredictionMeteo>> GetPredictionsMeteoForLocalisation(string localisation);
 }

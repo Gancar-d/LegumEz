@@ -1,4 +1,6 @@
-﻿using LegumEz.Domain.Cultures;
+﻿using LegumEz.Application.Meteo;
+using LegumEz.Domain.Cultures;
+using LegumEz.Infrastructure.MeteoApi;
 using LegumEz.Infrastructure.Options;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
@@ -23,6 +25,7 @@ namespace LegumEz.Infrastructure.Configuration
         private static void ConfigureServices(this IServiceCollection services)
         {
             services.AddScoped<CultureSeeder>();
+            services.AddScoped<IMeteoService, MeteoService>();
         }
 
         private static void ConfigureDbContexts(this IServiceCollection services)
@@ -43,6 +46,7 @@ namespace LegumEz.Infrastructure.Configuration
         {
             services.Configure<ConnectionStrings>(configuration.GetSection(nameof(ConnectionStrings)));
             services.Configure<SeedFile>(configuration.GetSection(nameof(SeedFile)));
+            services.Configure<MeteoApiKey>(configuration.GetSection(nameof(MeteoApiKey)));
         }
     }
 }

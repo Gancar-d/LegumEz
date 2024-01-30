@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LegumEz.Application.Cultures
 {
-    public record CultureDto
+    public record SimpleCultureDto
     {
-        public CultureDto(Guid id, string nom)
+        public SimpleCultureDto(Guid id, string nom)
         {
             Id = id;
             Nom = nom;

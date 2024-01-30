@@ -1,5 +1,6 @@
 using LegumEz.Application.Configuration;
 using LegumEz.Application.Mapping;
+using LegumEz.Application.Meteo.Configuration;
 using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
 using LegumEz.Infrastructure.Persistance.Seeder;
@@ -11,6 +12,7 @@ builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(Application
 
 builder.Services.ConfigureApplication();
 builder.Services.ConfigureInfrastructure(builder.Configuration);
+builder.Services.ConfigureMeteoHttpClient();
 
 using (var serviceScope = builder.Services.BuildServiceProvider().CreateScope())
 {

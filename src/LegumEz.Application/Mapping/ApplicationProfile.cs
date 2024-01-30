@@ -8,7 +8,12 @@ namespace LegumEz.Application.Mapping
     {
         public ApplicationProfile()
         {
-            CreateMap<Culture, CultureDto>();
+            CreateMap<Culture, SimpleCultureDto>();
+            CreateMap<Culture, DetailedCultureDto>();
+            CreateMap<ConditionCroissance, ConditionCroissanceDto>();
+            CreateMap<ConditionGermination, ConditionGerminationDto>();
+            CreateMap<Temperature, TemperatureDto>();
+            CreateMap<Temps, TempsDto>();
         }
     }
 }

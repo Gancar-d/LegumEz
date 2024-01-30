@@ -1,7 +1,7 @@
 ﻿using LegumEz.Application.Cultures;
 using LegumEz.Application.Meteo;
-using LegumEz.Domain.ConditionsMeteos;
 using LegumEz.Domain.Cultures;
+using LegumEz.Domain.PredictionsMeteos;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
 using LegumEz.WebApi.Tests.Builders.DbContext;
@@ -28,21 +28,21 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
         {
             var meteoServiceMock = new Mock<IMeteoService>();
 
-            var predictionsMeteos = new List<ConditionMeteo>()
+            var predictionsMeteos = new List<PredictionMeteo>()
             {
-                new ConditionMeteo(
+                new PredictionMeteo(
                     new Temperature(-5, UniteTemperature.Celsius),
                     new Temperature(0, UniteTemperature.Celsius),
                     new DateTime(2024, 1, 1)),
-                new ConditionMeteo(
+                new PredictionMeteo(
                     new Temperature(0, UniteTemperature.Celsius), 
                     new Temperature(10, UniteTemperature.Celsius), 
                     new DateTime(2024, 2, 1)),
-                new ConditionMeteo(
+                new PredictionMeteo(
                     new Temperature(10, UniteTemperature.Celsius), 
                     new Temperature(20, UniteTemperature.Celsius), 
                     new DateTime(2024, 3, 1)),
-                new ConditionMeteo(
+                new PredictionMeteo(
                     new Temperature(20, UniteTemperature.Celsius), 
                     new Temperature(22, UniteTemperature.Celsius), 
                     new DateTime(2024, 4, 1)),
@@ -50,7 +50,7 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
             
             meteoServiceMock
                 .Setup(x => x.GetPredictionsMeteoForLocalisation(It.IsAny<string>()))
-                .Returns(Task.FromResult(predictionsMeteos as IEnumerable<ConditionMeteo>));
+                .Returns(Task.FromResult(predictionsMeteos as IEnumerable<PredictionMeteo>));
 
             _meteoService = meteoServiceMock.Object;
 

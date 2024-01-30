@@ -22,20 +22,20 @@ namespace LegumEz.WebApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<CultureDto>> GetCultures()
+        public ActionResult<IEnumerable<SimpleCultureDto>> GetCultures()
         {
             var cultures = _cultureService.GetCultures();
 
-            var responseData = _mapper.Map<IEnumerable<CultureDto>>(cultures);
+            var responseData = _mapper.Map<IEnumerable<SimpleCultureDto>>(cultures);
             return Ok(responseData);
         }
 
         [HttpGet("{cultureId}")]
-        public ActionResult<CultureDto> GetCulture(Guid cultureId)
+        public ActionResult<DetailedCultureDto> GetCulture(Guid cultureId)
         {
             var culture = _cultureService.GetCultureById(cultureId);
 
-            var responseData = _mapper.Map<CultureDto>(culture);
+            var responseData = _mapper.Map<DetailedCultureDto>(culture);
             return Ok(responseData);
         }
 
