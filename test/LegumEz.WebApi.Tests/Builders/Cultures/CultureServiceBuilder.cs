@@ -6,6 +6,7 @@ using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
 using LegumEz.WebApi.Tests.Builders.DbContext;
 using LegumEz.WebApi.Tests.Builders.Mapper;
+using Microsoft.Extensions.Logging;
 using Moq;
 
 namespace LegumEz.WebApi.Tests.Builders.Cultures
@@ -65,8 +66,9 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
             }
                 
             var cultureRepository = new CultureRepository(_dbContext, MapperBuilder.Build());
-
-            return new CultureService(cultureRepository, _meteoService);
+            var loggerMock = new Mock<ILogger<CultureService>>();
+            
+            return new CultureService(cultureRepository, _meteoService, loggerMock.Object);
         }
     }
 }
