@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using LegumEz.Domain.Cultures;
 using LegumEz.Infrastructure.Persistance.Configuration;
-using LegumEz.Infrastructure.Persistance.DAL.Cultures;
 using Microsoft.EntityFrameworkCore;
 
 namespace LegumEz.Infrastructure.Persistance.Repositories
@@ -18,18 +17,23 @@ namespace LegumEz.Infrastructure.Persistance.Repositories
             _mapper = mapper;
         }
 
-        public IEnumerable<Domain.Cultures.Culture> FindAll()
+        public IEnumerable<Culture> FindAll()
         {
-            var culturesFromDb = _dbContext.Cultures.Select(x => x).ToList();
+            var culturesFromDb = _dbContext.Cultures
+                .AsNoTracking()
+                .Select(x => x)
+                .ToList();
 
-            return _mapper.Map<IEnumerable<Domain.Cultures.Culture>>(culturesFromDb);
+            return _mapper.Map<IEnumerable<Culture>>(culturesFromDb);
         }
 
-        public Domain.Cultures.Culture FindById(Guid id)
+        public Culture FindById(Guid id)
         {
-            var culturesFromDb = _dbContext.Cultures.Single(x => x.Id == id);
+            var culturesFromDb = _dbContext.Cultures
+                .AsNoTracking()
+                .Single(x => x.Id == id);
 
-            return _mapper.Map<Domain.Cultures.Culture>(culturesFromDb);
+            return _mapper.Map<Culture>(culturesFromDb);
         }
     }
 }
