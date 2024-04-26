@@ -8,7 +8,6 @@ namespace LegumEz.WebApi.Controllers
     [Route("api/Culture")]
     public class CultureController : ControllerBase
     {
-        private readonly ILogger<CultureController> _logger;
         private readonly ICultureService _cultureService;
         private readonly IMapper _mapper;
 
@@ -16,7 +15,6 @@ namespace LegumEz.WebApi.Controllers
             IMapper mapper,
             ICultureService cultureService)
         {
-            _logger = logger;
             _mapper = mapper;
             _cultureService = cultureService;
         }
