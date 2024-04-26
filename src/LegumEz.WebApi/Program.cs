@@ -5,6 +5,7 @@ using LegumEz.Application.Meteo.Configuration;
 using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
 using LegumEz.Infrastructure.Persistance.Seeder;
+using LegumEz.WebApi.Middlewares;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.Elasticsearch;
@@ -19,9 +20,8 @@ try
     var builder = WebApplication.CreateBuilder(args);
 
     ConfigureSerilog(builder);
-
-    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(ApplicationProfile));
     
+    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(ApplicationProfile));
     builder.Services.ConfigureApplication();
     builder.Services.ConfigureInfrastructure(builder.Configuration);
     builder.Services.ConfigureMeteoHttpClient();
@@ -33,7 +33,6 @@ try
     }
 
     builder.Services.AddControllers();
-
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
@@ -44,8 +43,10 @@ try
     {
         app.UseSwagger();
         app.UseSwaggerUI();
+        app.UseDeveloperExceptionPage();
     }
 
+    app.UseMiddleware<ExceptionMiddleware>();
     app.UseHttpsRedirection();
     app.UseAuthorization();
     app.MapControllers();
