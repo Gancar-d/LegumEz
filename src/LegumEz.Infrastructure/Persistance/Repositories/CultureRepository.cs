@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using LegumEz.Domain.Cultures;
 using LegumEz.Infrastructure.Persistance.Configuration;
+using LegumEz.Infrastructure.Persistance.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace LegumEz.Infrastructure.Persistance.Repositories
@@ -29,11 +30,17 @@ namespace LegumEz.Infrastructure.Persistance.Repositories
 
         public Culture FindById(Guid id)
         {
-            var culturesFromDb = _dbContext.Cultures
+            var culture = _dbContext.Cultures
                 .AsNoTracking()
-                .Single(x => x.Id == id);
+                .SingleOrDefault(x => x.Id == id);
 
-            return _mapper.Map<Culture>(culturesFromDb);
+            if (culture == null)
+            {
+                throw new EntityNotFoundException(id, typeof(DAL.Cultures.Culture),
+                    $"Entity {nameof(Culture)} not found with ID {id}");
+            }
+            
+            return _mapper.Map<Culture>(culture);
         }
     }
 }
