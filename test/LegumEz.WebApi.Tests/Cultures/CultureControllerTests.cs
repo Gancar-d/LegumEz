@@ -3,6 +3,7 @@ using FluentAssertions;
 using FluentAssertions.Execution;
 using LegumEz.Application.Cultures;
 using LegumEz.Infrastructure.Persistance.DAL.Cultures;
+using LegumEz.Infrastructure.Persistance.Exceptions;
 using LegumEz.WebApi.Controllers;
 using LegumEz.WebApi.Tests.ActionResultHelpers;
 using LegumEz.WebApi.Tests.Builders.Cultures;
@@ -20,12 +21,14 @@ namespace LegumEz.WebApi.Tests.Cultures
         private readonly IMapper _mapper;
 
         private readonly Guid _requestedCultureId;
+        private readonly Guid _invalidRequestedCultureId;
 
         public CultureControllerShould()
         {
             _logger = new LoggerBuilder<CultureController>().Build();
             _mapper = MapperBuilder.Build();
             _requestedCultureId = Guid.NewGuid();
+            _invalidRequestedCultureId = Guid.NewGuid();
             
             InitDb();
         }
@@ -105,6 +108,48 @@ namespace LegumEz.WebApi.Tests.Cultures
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
         }
 
+
+        [Fact]
+        public async Task Return_best_Periode_giving_a_culture_Id_and_a_Localisation()
+        {
+            //-- Arrange ----------------------------------------------------------
+            var cultureService = new CultureServiceBuilder()
+                .WithPredictionMeteo()
+                .WithInMemoryDbContext()
+                .Build();
+
+            var cultureController = new CultureController(_logger, _mapper, cultureService);
+
+            const string requestedLocalisation = "Montpellier";
+            const int expectedMoisPlantation = 4;
+            
+            //-- Act --------------------------------------------------------------
+            var response = await cultureController.GetMoisPlantation(_requestedCultureId, requestedLocalisation);
+
+            //-- Assert -----------------------------------------------------------
+            CheckThatReturnedPeriodeIsExpectedOne(response, expectedMoisPlantation);
+        }
+
+        [Fact]
+        public void Throw_EntityNotFoundException_giving_non_existent_culture_Id()
+        {
+            //-- Arrange ----------------------------------------------------------
+            var cultureService = new CultureServiceBuilder()
+                .WithInMemoryDbContext()
+                .Build();
+
+            var cultureController = new CultureController(_logger, _mapper, cultureService);
+
+            //-- Act --------------------------------------------------------------
+            var action =
+                () => cultureController.GetCulture(_invalidRequestedCultureId);
+
+            action.Should()
+                .Throw<EntityNotFoundException>()
+                .Where(exception => exception.EntityType == typeof(Culture) &&
+                                    exception.EntityId == _invalidRequestedCultureId);
+        }
+        
         private DetailedCultureDto CreateExpectedCulture()
         {
             var temperatureMinimale = new TemperatureDto() { Valeur = 10, Unite = Domain.Cultures.UniteTemperature.Celsius };
@@ -134,28 +179,7 @@ namespace LegumEz.WebApi.Tests.Cultures
             };
             return expectedCulture;
         }
-
-        [Fact]
-        public async Task Return_best_Periode_giving_a_culture_Id_and_a_Localisation()
-        {
-            //-- Arrange ----------------------------------------------------------
-            var cultureService = new CultureServiceBuilder()
-                .WithPredictionMeteo()
-                .WithInMemoryDbContext()
-                .Build();
-
-            var cultureController = new CultureController(_logger, _mapper, cultureService);
-
-            const string requestedLocalisation = "Montpellier";
-            var expectedMoisPlantation = 4;
-            
-            //-- Act --------------------------------------------------------------
-            var response = await cultureController.GetMoisPlantation(_requestedCultureId, requestedLocalisation);
-
-            //-- Assert -----------------------------------------------------------
-            CheckThatReturnedPeriodeIsExpectedOne(response, expectedMoisPlantation);
-        }
-
+        
         private static void CheckThatReturnedPeriodeIsExpectedOne(ActionResult<int> response, int expectedMoisPlantation)
         {
             var okResult = response.Result as OkObjectResult;
