@@ -1,0 +1,41 @@
+services:
+  app:
+    image: legumez-api
+    ports:
+      - 127.0.0.1:8080:80
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      mssql :
+        condition: service_healthy
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      SA_PASSWORD: "DB_secret_1"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - legumez-mssql-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P 'DB_secret_1' -Q 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  db_initializer:
+    image: mcr.microsoft.com/mssql-tools
+    depends_on:
+      mssql:
+        condition: service_healthy
+    environment:
+      SA_PASSWORD: "DB_secret_1"
+    volumes:
+      - legumez-mssql-data:/var/opt/mssql
+    command: >
+      bash -c "/opt/mssql-tools/bin/sqlcmd -S mssql -U sa -P 'DB_secret_1' -Q 'CREATE DATABASE LegumEzDb;'
+      && /opt/mssql-tools/bin/sqlcmd -S mssql -U sa -P 'DB_secret_1' -Q 'USE LegumEzDb; ALTER AUTHORIZATION ON DATABASE::LegumEzDb TO sa;'"
+
+volumes:
+  legumez-mssql-data:
