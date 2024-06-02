@@ -152,8 +152,8 @@ namespace LegumEz.WebApi.Tests.Cultures
         
         private DetailedCultureDto CreateExpectedCulture()
         {
-            var temperatureMinimale = new TemperatureDto() { Valeur = 10, Unite = Domain.Cultures.UniteTemperature.Celsius };
-            var temperatureOptimale = new TemperatureDto() { Valeur = 20, Unite = Domain.Cultures.UniteTemperature.Celsius };
+            var temperatureMinimale = new TemperatureDto() { Valeur = 10, Unite = Domain.SharedKernel.UniteTemperature.Celsius };
+            var temperatureOptimale = new TemperatureDto() { Valeur = 20, Unite = Domain.SharedKernel.UniteTemperature.Celsius };
             var tempsDeLevee = new TempsDto() { Valeur = 1, Unite = Domain.Cultures.UniteDeTemps.Jours };
             var tempsDeCroissance = new TempsDto() { Valeur = 1, Unite = Domain.Cultures.UniteDeTemps.Mois };
             

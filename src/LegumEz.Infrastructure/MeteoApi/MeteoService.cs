@@ -1,9 +1,7 @@
 using AutoMapper;
-using Azure.Identity;
 using LegumEz.Application.Meteo;
-using LegumEz.Domain.PredictionsMeteos;
+using LegumEz.Domain.Meteo;
 using LegumEz.Infrastructure.Options;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;

@@ -1,18 +1,17 @@
-﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.SharedKernel;
+﻿using LegumEz.Domain.SharedKernel;
 
-namespace LegumEz.Domain.PredictionsMeteos
+namespace LegumEz.Domain.Meteo
 {
     public record PredictionMeteo
     {
         public Temperature TemperatureMinimale { get; }
         public Temperature TemperatureMaximale { get; }
         public Temperature TemperatureMoyenne { get; }
-        public DateTime Date { get; }
+        public DateTime Jour { get; }
 
         public PredictionMeteo(Temperature temperatureMinimale,
             Temperature temperatureMaximale,
-            DateTime date)
+            DateTime jour)
         {
             if (temperatureMinimale == null)
             {
@@ -32,7 +31,7 @@ namespace LegumEz.Domain.PredictionsMeteos
             TemperatureMinimale = temperatureMinimale;
             TemperatureMaximale = temperatureMaximale;
             TemperatureMoyenne = CalculerTemperatureMoyenne(temperatureMinimale, temperatureMaximale);
-            Date = date;
+            Jour = jour;
         }
 
         private static Temperature CalculerTemperatureMoyenne(Temperature temperatureMinimale, Temperature temperatureMaximale)

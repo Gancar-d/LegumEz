@@ -1,4 +1,4 @@
-﻿using LegumEz.Domain.PredictionsMeteos;
+﻿using LegumEz.Domain.Meteo;
 
 namespace LegumEz.Domain.Cultures
 {
@@ -11,14 +11,14 @@ namespace LegumEz.Domain.Cultures
             ConditionGermination = conditionGermination ?? throw new ArgumentNullException(nameof(conditionGermination), "La condition de germination est requise");
             ConditionCroissance = conditionCroissance ?? throw new ArgumentNullException(nameof(conditionCroissance), "La condition de croissance est requise");
         }
-        private Guid Id { get; }
+        public Guid Id { get; }
         public string Nom { get; }
         public ConditionGermination ConditionGermination { get; }
         public ConditionCroissance ConditionCroissance { get; }
 
         public int GetMeilleurMoisPlantation(IEnumerable<PredictionMeteo> predictionsMeteos)
         {
-            var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Date.Month);
+            var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Jour.Month);
             
             var moisEtTemperatureProche = predictionsMeteosByMonth.Select(group =>
             {

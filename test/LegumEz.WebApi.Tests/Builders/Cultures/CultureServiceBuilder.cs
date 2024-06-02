@@ -1,7 +1,7 @@
 ﻿using LegumEz.Application.Cultures;
 using LegumEz.Application.Meteo;
-using LegumEz.Domain.Cultures;
-using LegumEz.Domain.PredictionsMeteos;
+using LegumEz.Domain.Meteo;
+using LegumEz.Domain.SharedKernel;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Repositories;
 using LegumEz.WebApi.Tests.Builders.DbContext;
