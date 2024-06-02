@@ -1,5 +1,5 @@
 ﻿using LegumEz.Application.Meteo;
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
 using LegumEz.Infrastructure.MeteoApi;
 using LegumEz.Infrastructure.Options;
 using LegumEz.Infrastructure.Persistance.Configuration;

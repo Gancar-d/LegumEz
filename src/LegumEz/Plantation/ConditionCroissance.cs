@@ -1,16 +1,16 @@
 ﻿using LegumEz.Domain.SharedKernel;
 
-namespace LegumEz.Domain.Cultures
+namespace LegumEz.Domain.Plantation
 {
-    public record ConditionGermination
+    public record ConditionCroissance
     {
         public Temperature TemperatureMinimale { get; }
         public Temperature TemperatureOptimale { get; }
-        public Temps TempsDeLevee { get; }
+        public Temps TempsDeCroissance { get; }
 
-        public ConditionGermination(Temperature temperatureMinimale, Temperature temperatureOptimale, Temps tempsDeLevee)
+        public ConditionCroissance(Temperature temperatureMinimale, Temperature temperatureOptimale, Temps tempsDeCroissance)
         {
-            if (temperatureMinimale == null)
+            if (temperatureMinimale is null)
             {
                 throw new ArgumentNullException(nameof(temperatureMinimale), "La température minimale est requise");
             }
@@ -20,9 +20,9 @@ namespace LegumEz.Domain.Cultures
                 throw new ArgumentNullException(nameof(temperatureOptimale), "La rempérature optimale est requise");
             }
 
-            if (tempsDeLevee is null)
+            if (tempsDeCroissance is null)
             {
-                throw new ArgumentNullException(nameof(tempsDeLevee), "Le temps de levée est requis");
+                throw new ArgumentNullException(nameof(tempsDeCroissance), "Le temps de croissance est requis");
             }
 
             if (temperatureMinimale >= temperatureOptimale)
@@ -32,7 +32,7 @@ namespace LegumEz.Domain.Cultures
 
             TemperatureMinimale = temperatureMinimale;
             TemperatureOptimale = temperatureOptimale;
-            TempsDeLevee = tempsDeLevee;
+            TempsDeCroissance = tempsDeCroissance;
         }
     }
 }

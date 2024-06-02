@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using LegumEz.Application.Cultures;
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
 using LegumEz.Domain.SharedKernel;
 
 namespace LegumEz.Application.Mapping

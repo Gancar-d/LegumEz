@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Exceptions;
 using Microsoft.EntityFrameworkCore;

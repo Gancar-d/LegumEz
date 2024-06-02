@@ -1,5 +1,5 @@
 ﻿using LegumEz.Application.Meteo;
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
 using Microsoft.Extensions.Logging;
 
 namespace LegumEz.Application.Cultures

@@ -1,5 +1,5 @@
 ﻿
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
 
 namespace LegumEz.Application.Cultures
 {

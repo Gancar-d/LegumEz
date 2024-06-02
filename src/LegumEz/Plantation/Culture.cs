@@ -1,6 +1,4 @@
-﻿using LegumEz.Domain.Meteo;
-
-namespace LegumEz.Domain.Cultures
+﻿namespace LegumEz.Domain.Plantation
 {
     public record Culture
     {
