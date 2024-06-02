@@ -44,18 +44,8 @@ namespace LegumEz.Application.Cultures
             var culture = GetCultureById(cultureId);
             var predictionsMeteos = await _meteoService.GetPredictionsMeteoForLocalisation(localisation);
 
-            var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Date.Month);
-            var moisEtTemperatureProche = predictionsMeteosByMonth.Select(group =>
-            {
-                int mois = group.Key;
-                double temperatureMoyenneProche = group
-                    .Select(p => Math.Abs((p.TemperatureMoyenne - culture.ConditionGermination.TemperatureOptimale).Valeur))
-                    .Min();
-
-                return new { Mois = mois, TemperatureProche = temperatureMoyenneProche };
-            });
-
-            var moisOptimal = moisEtTemperatureProche.OrderBy(x => x.TemperatureProche).First().Mois;
+            var moisOptimal = culture.GetMeilleurMoisPlantation(predictionsMeteos);
+            
             _logger.LogInformation("Founded {MoisOptimal} as mois optimal pour {@Culture} a {Localisation}",
                 moisOptimal, culture, localisation);
             
