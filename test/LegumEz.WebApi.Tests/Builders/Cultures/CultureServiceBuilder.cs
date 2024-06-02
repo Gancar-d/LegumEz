@@ -68,7 +68,7 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
             var cultureRepository = new CultureRepository(_dbContext, MapperBuilder.Build());
             var loggerMock = new Mock<ILogger<CultureService>>();
             
-            return new CultureService(cultureRepository, _meteoService, loggerMock.Object);
+            return new CultureService(cultureRepository, _meteoService, loggerMock.Object, MapperBuilder.Build());
         }
     }
 }

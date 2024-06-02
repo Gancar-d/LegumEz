@@ -2,6 +2,7 @@
 using LegumEz.Application.Cultures;
 using LegumEz.Domain.Plantation;
 using LegumEz.Domain.SharedKernel;
+using PredictionMeteo = LegumEz.Domain.Meteo.PredictionMeteo;
 
 namespace LegumEz.Application.Mapping
 {
@@ -15,6 +16,7 @@ namespace LegumEz.Application.Mapping
             CreateMap<ConditionGermination, ConditionGerminationDto>();
             CreateMap<Temperature, TemperatureDto>();
             CreateMap<Temps, TempsDto>();
+            CreateMap<LegumEz.Domain.Meteo.PredictionMeteo, LegumEz.Domain.Plantation.PredictionMeteo>();
         }
     }
 }

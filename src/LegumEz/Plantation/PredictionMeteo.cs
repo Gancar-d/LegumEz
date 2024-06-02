@@ -10,7 +10,7 @@ namespace LegumEz.Domain.Plantation
         public PredictionMeteo(Temperature temperatureMoyenne,
             DateTime jour)
         {
-            if (TemperatureMoyenne == null)
+            if (temperatureMoyenne == null)
             {
                 throw new ArgumentNullException(nameof(TemperatureMoyenne), "La température moyenne est requise");
             }

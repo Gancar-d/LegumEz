@@ -1,4 +1,6 @@
-﻿using LegumEz.Application.Meteo;
+﻿using System.Collections;
+using AutoMapper;
+using LegumEz.Application.Meteo;
 using LegumEz.Domain.Plantation;
 using Microsoft.Extensions.Logging;
 
@@ -9,14 +11,17 @@ namespace LegumEz.Application.Cultures
         private readonly ICultureRepository _cultureRepository;
         private readonly IMeteoService _meteoService;
         private readonly ILogger<CultureService> _logger;
+        private readonly IMapper _mapper;
 
         public CultureService(ICultureRepository cultureRepository,
         IMeteoService meteoService,
-        ILogger<CultureService> logger)
+        ILogger<CultureService> logger,
+        IMapper mapper)
         {
             _cultureRepository = cultureRepository;
             _meteoService = meteoService;
             _logger = logger;
+            _mapper = mapper;
         }
 
         public IEnumerable<Culture> GetCultures()
@@ -44,7 +49,7 @@ namespace LegumEz.Application.Cultures
             var culture = GetCultureById(cultureId);
             var predictionsMeteos = await _meteoService.GetPredictionsMeteoForLocalisation(localisation);
 
-            var moisOptimal = culture.GetMeilleurMoisPlantation(predictionsMeteos);
+            var moisOptimal = culture.GetMeilleurMoisPlantation(_mapper.Map<IEnumerable<Domain.Plantation.PredictionMeteo>>(predictionsMeteos));
             
             _logger.LogInformation("Founded {MoisOptimal} as mois optimal pour {@Culture} a {Localisation}",
                 moisOptimal, culture, localisation);
