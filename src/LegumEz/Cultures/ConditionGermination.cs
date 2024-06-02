@@ -1,4 +1,6 @@
-﻿namespace LegumEz.Domain.Cultures
+﻿using LegumEz.Domain.SharedKernel;
+
+namespace LegumEz.Domain.Cultures
 {
     public record ConditionGermination
     {

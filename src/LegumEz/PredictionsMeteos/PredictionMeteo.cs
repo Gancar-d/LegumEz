@@ -1,4 +1,5 @@
 ﻿using LegumEz.Domain.Cultures;
+using LegumEz.Domain.SharedKernel;
 
 namespace LegumEz.Domain.PredictionsMeteos
 {
