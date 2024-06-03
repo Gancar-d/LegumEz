@@ -8,17 +8,17 @@ using Newtonsoft.Json;
 
 namespace LegumEz.Infrastructure.MeteoApi;
 
-public class MeteoService : IMeteoService
+public class GetPredictionMeteo : Domain.Meteo.spi.GetPredictionMeteo
 {
     private readonly string _apiKey;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly IMapper _mapper;
-    private readonly ILogger<MeteoService> _logger;
+    private readonly ILogger<GetPredictionMeteo> _logger;
     
-    public MeteoService(IHttpClientFactory httpClientFactory,
+    public GetPredictionMeteo(IHttpClientFactory httpClientFactory,
         IOptions<MeteoApiKey> meteoApiKeyOption,
         IMapper mapper,
-        ILogger<MeteoService> logger)
+        ILogger<GetPredictionMeteo> logger)
     {
         _httpClientFactory = httpClientFactory;
         _apiKey = meteoApiKeyOption.Value.Key;
@@ -26,7 +26,7 @@ public class MeteoService : IMeteoService
         _logger = logger;
     }
     
-    public async Task<IEnumerable<PredictionMeteo>> GetPredictionsMeteoForLocalisation(string localisation)
+    public IEnumerable<PredictionMeteo> ForLocalisation(Localisation localisation)
     {
         var currentDate = DateTime.Now.ToString("yyyy-MM-dd");
         var endDate = DateTime.Now.AddMonths(3).ToString("yyyy-MM-dd");
@@ -34,7 +34,7 @@ public class MeteoService : IMeteoService
         _logger.LogInformation("Getting predictions meteo de {Localisation} a partir de {StartDate} jusqu'a {EndDate}", 
             localisation, currentDate, endDate);
         
-        var predictionMeteos = await GetPredictionsMeteoByDateAndLocalisation(localisation, currentDate, endDate);
+        var predictionMeteos = GetPredictionsMeteoByDateAndLocalisation(localisation, currentDate, endDate);
 
         _logger.LogInformation("Got predictions meteo de {Localisation} a partir de {StartDate} jusqu'a {EndDate}",
             localisation, currentDate, endDate);
@@ -42,15 +42,16 @@ public class MeteoService : IMeteoService
         return predictionMeteos;
     }
 
-    private async Task<IEnumerable<PredictionMeteo>> GetPredictionsMeteoByDateAndLocalisation(string localisation, string startDate, string endDate)
+    private IEnumerable<PredictionMeteo> GetPredictionsMeteoByDateAndLocalisation(Localisation localisation, string startDate, string endDate)
     {
         var httpclient = _httpClientFactory.CreateClient("MeteoApi");
         
-        var response = await httpclient
-            .GetAsync($"/timeline/{localisation}/{startDate}/{endDate}?unitGroup=metric&key={_apiKey}&contentType=json");
+        var response = httpclient
+            .GetAsync($"/timeline/{localisation.Ville}/{startDate}/{endDate}?unitGroup=metric&key={_apiKey}&contentType=json")
+            .Result;
         response.EnsureSuccessStatusCode();
         
-        var stream = await response.Content.ReadAsStringAsync();        
+        var stream = response.Content.ReadAsStringAsync().Result;        
         var forecast = JsonConvert.DeserializeObject<MeteoForecast>(stream);
         
         var predictionMeteos = _mapper.Map<IEnumerable<PredictionMeteo>>(forecast.Days);

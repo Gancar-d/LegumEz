@@ -14,7 +14,7 @@
         public ConditionGermination ConditionGermination { get; }
         public ConditionCroissance ConditionCroissance { get; }
 
-        public int GetMeilleurMoisPlantation(IEnumerable<PredictionMeteo> predictionsMeteos)
+        public Mois GetMoisOptimalDePlantation(IEnumerable<PredictionMeteo> predictionsMeteos)
         {
             var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Jour.Month);
             
@@ -30,7 +30,7 @@
 
             var moisOptimal = moisEtTemperatureProche.OrderBy(x => x.TemperatureProche).First().Mois;
             
-            return moisOptimal;
+            return (Mois)moisOptimal;
         }
     }
 }

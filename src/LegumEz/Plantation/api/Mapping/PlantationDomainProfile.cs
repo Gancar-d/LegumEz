@@ -1,14 +1,12 @@
 ﻿using AutoMapper;
-using LegumEz.Application.Cultures;
-using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.api.dto;
 using LegumEz.Domain.SharedKernel;
-using PredictionMeteo = LegumEz.Domain.Meteo.PredictionMeteo;
 
-namespace LegumEz.Application.Mapping
+namespace LegumEz.Domain.Plantation.api.mapping
 {
-    public class ApplicationProfile : Profile
+    public class PlantationDomainProfile : Profile
     {
-        public ApplicationProfile()
+        public PlantationDomainProfile()
         {
             CreateMap<Culture, SimpleCultureDto>();
             CreateMap<Culture, DetailedCultureDto>();
@@ -16,7 +14,7 @@ namespace LegumEz.Application.Mapping
             CreateMap<ConditionGermination, ConditionGerminationDto>();
             CreateMap<Temperature, TemperatureDto>();
             CreateMap<Temps, TempsDto>();
-            CreateMap<LegumEz.Domain.Meteo.PredictionMeteo, LegumEz.Domain.Plantation.PredictionMeteo>();
+            CreateMap<Meteo.PredictionMeteo, PredictionMeteo>();
         }
     }
 }

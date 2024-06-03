@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LegumEz.Application.Cultures
+namespace LegumEz.Domain.Plantation.api.dto
 {
     public record SimpleCultureDto
     {
