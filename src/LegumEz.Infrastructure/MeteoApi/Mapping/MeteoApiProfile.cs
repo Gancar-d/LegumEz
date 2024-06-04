@@ -9,9 +9,9 @@ public class MeteoApiProfile : Profile
     public MeteoApiProfile()
     {
         CreateMap<ForecastDay, PredictionMeteo>()
-            .ForCtorParam(nameof(PredictionMeteo. TemperatureMinimale), o => o.MapFrom(s => new Temperature((float)s.TempMin, UniteTemperature.Celsius)))
-            .ForCtorParam(nameof(PredictionMeteo.TemperatureMaximale), o => o.MapFrom(s => new Temperature((float)s.TempMax, UniteTemperature.Celsius)))
-            .ForCtorParam(nameof(PredictionMeteo.TemperatureMoyenne), o => o.MapFrom(s => new Temperature((float)s.Temp, UniteTemperature.Celsius)))
-            .ForCtorParam(nameof(PredictionMeteo.Jour), o => o.MapFrom(s => DateTime.Parse(s.DateTime)));
+            .ForCtorParam("temperatureMinimale", o => o.MapFrom(s => new Temperature((float)s.TempMin, UniteTemperature.Celsius)))
+            .ForCtorParam("temperatureMaximale", o => o.MapFrom(s => new Temperature((float)s.TempMax, UniteTemperature.Celsius)))
+            .ForCtorParam("temperatureMoyenne", o => o.MapFrom(s => new Temperature((float)s.Temp, UniteTemperature.Celsius)))
+            .ForCtorParam("jour", o => o.MapFrom(s => DateTime.Parse(s.DateTime)));
     }
 }
