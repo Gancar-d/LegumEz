@@ -19,18 +19,22 @@ public class GetPredictionMeteoBuilder
             new PredictionMeteo(
                 new Temperature(-5, UniteTemperature.Celsius),
                 new Temperature(0, UniteTemperature.Celsius),
+                new Temperature(-2.5, UniteTemperature.Celsius),
                 new DateTime(2024, 1, 1)),
             new PredictionMeteo(
                 new Temperature(0, UniteTemperature.Celsius), 
-                new Temperature(10, UniteTemperature.Celsius), 
+                new Temperature(10, UniteTemperature.Celsius),
+                new Temperature(5, UniteTemperature.Celsius),
                 new DateTime(2024, 2, 1)),
             new PredictionMeteo(
                 new Temperature(10, UniteTemperature.Celsius), 
                 new Temperature(20, UniteTemperature.Celsius), 
+                new Temperature(15, UniteTemperature.Celsius),
                 new DateTime(2024, 3, 1)),
             new PredictionMeteo(
                 new Temperature(20, UniteTemperature.Celsius), 
                 new Temperature(22, UniteTemperature.Celsius), 
+                new Temperature(21, UniteTemperature.Celsius),
                 new DateTime(2024, 4, 1)),
         };
             

@@ -1,4 +1,4 @@
-﻿namespace LegumEz.Domain.Plantation
+﻿namespace LegumEz.Domain.Plantation.Culture
 {
     public enum UniteDeTemps
     {

@@ -1,4 +1,5 @@
 using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.Culture;
 using LegumEz.Domain.SharedKernel;
 
 namespace LegumEz.WebApi.Tests.Builders.Cultures;

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.Culture;
 using LegumEz.Domain.Plantation.spi;
 using LegumEz.Infrastructure.Persistance.Configuration;
 using LegumEz.Infrastructure.Persistance.Exceptions;

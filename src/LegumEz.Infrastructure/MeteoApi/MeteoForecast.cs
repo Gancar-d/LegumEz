@@ -8,5 +8,7 @@ public sealed class MeteoForecast
 public sealed class ForecastDay
 {
     public string DateTime { get; set; }
-    public int Temp { get; set; }
+    public decimal Temp { get; set; }
+    public decimal TempMax { get; set; }
+    public decimal TempMin { get; set; }
 }

@@ -2,7 +2,7 @@
 
 namespace LegumEz.Domain.Plantation.spi
 {
-    public interface ICultureRepository : IRepository<Culture>
+    public interface ICultureRepository : IRepository<Culture.Culture>
     {
     }
 }

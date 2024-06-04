@@ -47,11 +47,14 @@ public class GetPredictionMeteo : Domain.Meteo.spi.GetPredictionMeteo
         var httpclient = _httpClientFactory.CreateClient("MeteoApi");
         
         var response = httpclient
-            .GetAsync($"/timeline/{localisation.Ville}/{startDate}/{endDate}?unitGroup=metric&key={_apiKey}&contentType=json")
+            .GetAsync($"/VisualCrossingWebServices/rest/services/timeline/{localisation.Ville}/{startDate}/{endDate}?unitGroup=metric&key={_apiKey}&contentType=json")
             .Result;
         response.EnsureSuccessStatusCode();
+
+        var stream = response.Content.ReadAsStringAsync().Result;
         
-        var stream = response.Content.ReadAsStringAsync().Result;        
+        _logger.LogDebug("returned content : {visualCrossingReturnedContent}", stream);
+        
         var forecast = JsonConvert.DeserializeObject<MeteoForecast>(stream);
         
         var predictionMeteos = _mapper.Map<IEnumerable<PredictionMeteo>>(forecast.Days);

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using LegumEz.Domain.Plantation.api.mapping;
 using LegumEz.Infrastructure.MeteoApi.Mapping;
+using LegumEz.WebApi.Mapping;
 
 namespace LegumEz.WebApi.Tests.Builders.Mapper
 {

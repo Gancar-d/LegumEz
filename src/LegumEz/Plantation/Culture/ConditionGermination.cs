@@ -1,6 +1,6 @@
 ﻿using LegumEz.Domain.SharedKernel;
 
-namespace LegumEz.Domain.Plantation
+namespace LegumEz.Domain.Plantation.Culture
 {
     public record ConditionGermination
     {

@@ -9,37 +9,37 @@ namespace LegumEz.Domain.Meteo
         public Temperature TemperatureMoyenne { get; }
         public DateTime Jour { get; }
 
-        public PredictionMeteo(Temperature temperatureMinimale,
+        public PredictionMeteo(
+            Temperature temperatureMinimale,
             Temperature temperatureMaximale,
+            Temperature temperatureMoyenne,
             DateTime jour)
         {
-            if (temperatureMinimale == null)
-            {
-                throw new ArgumentNullException(nameof(temperatureMinimale), "La température minimale est requise");
-            }
+            TemperatureMinimale = temperatureMinimale ??
+                                  throw new ArgumentNullException(nameof(temperatureMinimale),
+                                      "La température minimale est requise");
+            TemperatureMaximale = temperatureMaximale ??
+                                  throw new ArgumentNullException(nameof(temperatureMaximale),
+                                      "La température maximale est requise");
+            TemperatureMoyenne = temperatureMoyenne ??
+                                 throw new ArgumentNullException(nameof(temperatureMoyenne),
+                                     "La température moyenne est requise");
 
-            if (temperatureMaximale == null)
-            {
-                throw new ArgumentNullException(nameof(temperatureMaximale), "La température maximale est requise");
-            }
-
-            if (temperatureMinimale > temperatureMaximale)
-            {
-                throw new ArgumentException("La température minimale doit être inférieure à la température maximale", nameof(temperatureMinimale));
-            }
-
-            TemperatureMinimale = temperatureMinimale;
-            TemperatureMaximale = temperatureMaximale;
-            TemperatureMoyenne = CalculerTemperatureMoyenne(temperatureMinimale, temperatureMaximale);
             Jour = jour;
+            
+            if (TemperatureMaximale < TemperatureMinimale)
+            {
+                throw new ArgumentException(
+                    "La temperature minimale ne peut pas être superieure à la temperature maximale",
+                    nameof(temperatureMinimale));
+            }
+            
+            if (TemperatureMoyenne < TemperatureMinimale || TemperatureMoyenne > TemperatureMaximale)
+            {
+                throw new ArgumentException(
+                    "La temperature moyenne doit être comprise entre la temperature minimale et maximale",
+                    nameof(temperatureMoyenne));
+            }
         }
-
-        private static Temperature CalculerTemperatureMoyenne(Temperature temperatureMinimale, Temperature temperatureMaximale)
-        {
-            var valeurTemperatureMoyenne = (temperatureMinimale.Valeur + temperatureMaximale.Valeur) / 2;
-
-            return new Temperature(valeurTemperatureMoyenne, temperatureMinimale.Unite);
-        }
-
     }
 }

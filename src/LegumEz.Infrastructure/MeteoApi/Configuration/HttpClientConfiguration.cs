@@ -8,7 +8,7 @@ public static class HttpClientConfiguration
     {
         services.AddHttpClient("MeteoApi", client =>
         {
-            client.BaseAddress = new Uri("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline");
+            client.BaseAddress = new Uri("https://weather.visualcrossing.com/");
         });
     }
 }
