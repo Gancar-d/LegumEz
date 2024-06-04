@@ -1,3 +1,4 @@
+using LegumEz.Domain.Plantation;
 using LegumEz.Domain.Plantation.api;
 
 namespace LegumEz.WebApi;
@@ -11,6 +12,6 @@ public static class webapiConfiguration
 
     private static void ConfigureServices(this IServiceCollection services)
     {
-        services.AddScoped<Plantation>();
+        services.AddScoped<OptimizePlantation, PlantationOptimizer>();
     }
 }

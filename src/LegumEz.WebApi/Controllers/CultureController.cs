@@ -11,20 +11,23 @@ namespace LegumEz.WebApi.Controllers
     public class CultureController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly Plantation _plantation;
+        private readonly OptimizePlantation _optimizePlantation;
+        private readonly AccessCulture _accessCulture;
 
         public CultureController(ILogger<CultureController> logger,
             IMapper mapper,
-            Plantation plantation)
+            OptimizePlantation optimizePlantation,
+            AccessCulture accessCulture)
         {
             _mapper = mapper;
-            _plantation = plantation;
+            _optimizePlantation = optimizePlantation;
+            _accessCulture = accessCulture;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<SimpleCultureDto>> GetCultures()
         {
-            var cultures = _plantation.GetAllCultures();
+            var cultures = _accessCulture.All();
 
             var responseData = _mapper.Map<IEnumerable<SimpleCultureDto>>(cultures);
             return Ok(responseData);
@@ -33,7 +36,7 @@ namespace LegumEz.WebApi.Controllers
         [HttpGet("{cultureId}")]
         public ActionResult<DetailedCultureDto> GetCulture(Guid cultureId)
         {
-            var culture = _plantation.GetCultureFromId(cultureId);
+            var culture = _accessCulture.FromId(cultureId);
 
             var responseData = _mapper.Map<DetailedCultureDto>(culture);
             return Ok(responseData);
@@ -42,9 +45,10 @@ namespace LegumEz.WebApi.Controllers
         [HttpGet("{cultureId}/{localisation}/MoisPlantation")]
         public ActionResult<int> GetMoisPlantation(Guid cultureId, string ville)
         {
-            var meilleurMoisDePlantation = _plantation.GetMoisOptimalDePlantationByLocalisation(cultureId, new Localisation(ville));
+            var cultureToPlant = _accessCulture.FromId(cultureId);
+            var moisOptimalPlantation = _optimizePlantation.GetMoisOptimalDePlantationByLocalisation(cultureToPlant, new Localisation(ville));
             
-            return Ok((int)meilleurMoisDePlantation);
+            return Ok((int)moisOptimalPlantation);
         }
     }
 }
