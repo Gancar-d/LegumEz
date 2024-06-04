@@ -1,5 +1,7 @@
 using AutoMapper;
-using LegumEz.Application.Cultures;
+using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.api;
+using LegumEz.Domain.Plantation.api.dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LegumEz.WebApi.Controllers
@@ -8,21 +10,21 @@ namespace LegumEz.WebApi.Controllers
     [Route("api/Culture")]
     public class CultureController : ControllerBase
     {
-        private readonly ICultureService _cultureService;
         private readonly IMapper _mapper;
+        private readonly Plantation _plantation;
 
         public CultureController(ILogger<CultureController> logger,
             IMapper mapper,
-            ICultureService cultureService)
+            Plantation plantation)
         {
             _mapper = mapper;
-            _cultureService = cultureService;
+            _plantation = plantation;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<SimpleCultureDto>> GetCultures()
         {
-            var cultures = _cultureService.GetCultures();
+            var cultures = _plantation.GetAllCultures();
 
             var responseData = _mapper.Map<IEnumerable<SimpleCultureDto>>(cultures);
             return Ok(responseData);
@@ -31,18 +33,18 @@ namespace LegumEz.WebApi.Controllers
         [HttpGet("{cultureId}")]
         public ActionResult<DetailedCultureDto> GetCulture(Guid cultureId)
         {
-            var culture = _cultureService.GetCultureById(cultureId);
+            var culture = _plantation.GetCultureFromId(cultureId);
 
             var responseData = _mapper.Map<DetailedCultureDto>(culture);
             return Ok(responseData);
         }
 
         [HttpGet("{cultureId}/{localisation}/MoisPlantation")]
-        public async Task<ActionResult<int>> GetMoisPlantation(Guid cultureId, string localisation)
+        public ActionResult<int> GetMoisPlantation(Guid cultureId, string ville)
         {
-            var meilleurMoisDePlantation = await _cultureService.GetMoisPlantationForCultureAndLocalisation(cultureId, localisation);
+            var meilleurMoisDePlantation = _plantation.GetMoisOptimalDePlantationByLocalisation(cultureId, new Localisation(ville));
             
-            return Ok(meilleurMoisDePlantation);
+            return Ok((int)meilleurMoisDePlantation);
         }
     }
 }

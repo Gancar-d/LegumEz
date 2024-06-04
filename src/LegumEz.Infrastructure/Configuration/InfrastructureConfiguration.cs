@@ -1,5 +1,6 @@
 ﻿using LegumEz.Application.Meteo;
-using LegumEz.Domain.Cultures;
+using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.spi;
 using LegumEz.Infrastructure.MeteoApi;
 using LegumEz.Infrastructure.Options;
 using LegumEz.Infrastructure.Persistance.Configuration;
@@ -9,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using GetPredictionMeteo = LegumEz.Infrastructure.MeteoApi.GetPredictionMeteo;
 
 namespace LegumEz.Infrastructure.Configuration
 {
@@ -25,7 +27,7 @@ namespace LegumEz.Infrastructure.Configuration
         private static void ConfigureServices(this IServiceCollection services)
         {
             services.AddScoped<CultureSeeder>();
-            services.AddScoped<IMeteoService, MeteoService>();
+            services.AddScoped<Domain.Meteo.spi.GetPredictionMeteo, GetPredictionMeteo>();
         }
 
         private static void ConfigureDbContexts(this IServiceCollection services)

@@ -1,6 +1,6 @@
 ﻿using LegumEz.Domain.Repository;
 
-namespace LegumEz.Domain.Cultures
+namespace LegumEz.Domain.Plantation.spi
 {
     public interface ICultureRepository : IRepository<Culture>
     {

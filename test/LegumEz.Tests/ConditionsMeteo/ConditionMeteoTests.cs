@@ -1,5 +1,5 @@
-﻿using LegumEz.Domain.Cultures;
-using LegumEz.Domain.PredictionsMeteos;
+﻿using LegumEz.Domain.Meteo;
+using LegumEz.Domain.SharedKernel;
 
 namespace LegumEz.Domain.Tests.ConditionsMeteo
 {
@@ -50,7 +50,7 @@ namespace LegumEz.Domain.Tests.ConditionsMeteo
 
             var conditionMeteo = new PredictionMeteo(temperatureMinimale, temperatureMaximale, date);
 
-            Assert.Equal(date, conditionMeteo.Date);
+            Assert.Equal(date, conditionMeteo.Jour);
         }
 
         [Theory]

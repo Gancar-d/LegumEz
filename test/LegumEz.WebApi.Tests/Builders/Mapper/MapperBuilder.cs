@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LegumEz.Domain.Plantation.api.mapping;
 using LegumEz.Infrastructure.MeteoApi.Mapping;
 
 namespace LegumEz.WebApi.Tests.Builders.Mapper
@@ -13,7 +14,7 @@ namespace LegumEz.WebApi.Tests.Builders.Mapper
         {
             var configuration = new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile(new Application.Mapping.ApplicationProfile());
+                cfg.AddProfile(new PlantationDomainProfile());
                 cfg.AddProfile(new Infrastructure.Persistance.Mapping.InfrastructureProfile());
                 cfg.AddProfile(new MeteoApiProfile());
             });

@@ -1,10 +1,10 @@
 using System.Configuration;
-using LegumEz.Application.Configuration;
-using LegumEz.Application.Mapping;
 using LegumEz.Application.Meteo.Configuration;
+using LegumEz.Domain.Plantation.api.mapping;
 using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
 using LegumEz.Infrastructure.Persistance.Seeder;
+using LegumEz.WebApi;
 using LegumEz.WebApi.Middlewares;
 using Serilog;
 using Serilog.Events;
@@ -21,8 +21,8 @@ try
 
     ConfigureSerilog(builder);
     
-    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(ApplicationProfile));
-    builder.Services.ConfigureApplication();
+    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(PlantationDomainProfile));
+    builder.Services.ConfigureWebapi();
     builder.Services.ConfigureInfrastructure(builder.Configuration);
     builder.Services.ConfigureMeteoHttpClient();
 

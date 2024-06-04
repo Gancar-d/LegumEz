@@ -1,6 +1,7 @@
-﻿using LegumEz.Domain.Cultures;
+﻿using LegumEz.Domain.Plantation;
+using LegumEz.Domain.SharedKernel;
 
-namespace LegumEz.Application.Cultures
+namespace LegumEz.Domain.Plantation.api.dto
 {
     public record DetailedCultureDto
     {

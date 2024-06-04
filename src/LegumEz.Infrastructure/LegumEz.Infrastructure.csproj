@@ -26,7 +26,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\LegumEz.Application\LegumEz.Application.csproj" />
 		<ProjectReference Include="..\LegumEz\LegumEz.Domain.csproj" />
 	</ItemGroup>
 

@@ -1,4 +1,4 @@
-﻿namespace LegumEz.Domain.Cultures
+﻿namespace LegumEz.Domain.SharedKernel
 {
     public partial record Temperature
     {
