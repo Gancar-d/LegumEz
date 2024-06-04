@@ -71,25 +71,7 @@ void ConfigureSerilog(WebApplicationBuilder webApplicationBuilder)
 
     webApplicationBuilder.Host.UseSerilog((context, services, configuration) =>
     {
-        var elasticUri = GetElasticUri(context);
-        var elasticApiKey = GetElasticApiKey(context);
-
         ConfigureLogger(configuration);
-        configuration
-            .ReadFrom.Configuration(context.Configuration)
-            .ReadFrom.Services(services)
-            .WriteTo.Elasticsearch(
-                new ElasticsearchSinkOptions(
-                    new Uri(elasticUri))
-                {
-                    IndexFormat = "log-legumez-dev",
-                    AutoRegisterTemplate = true,
-                    NumberOfShards = 2,
-                    NumberOfReplicas = 1,
-                    EmitEventFailure = EmitEventFailureHandling.WriteToSelfLog,
-                    MinimumLogEventLevel = LogEventLevel.Information,
-                    ApiKey = elasticApiKey
-                });
     }, true);
 }
 
@@ -107,30 +89,8 @@ void ConfigureLogger(LoggerConfiguration loggerConfiguration)
 
 #if DEBUG
 
-    // loggerConfiguration
-    //     .MinimumLevel.Debug();
+    loggerConfiguration
+        .MinimumLevel.Debug();
 
 #endif
-}
-
-string GetElasticUri(HostBuilderContext hostBuilderContext)
-{
-    var uri = hostBuilderContext.Configuration.GetValue<string>("ElasticConfig:Uri");
-    if (uri == null)
-    {
-        throw new ConfigurationErrorsException("Setting \"ElasticConfig:Uri\" not found in appsettings.json");
-    }
-
-    return uri;
-}
-
-string GetElasticApiKey(HostBuilderContext hostBuilderContext)
-{
-    var apiKey = hostBuilderContext.Configuration.GetValue<string>("ElasticConfig:ApiKey");
-    if (apiKey == null)
-    {
-        throw new ConfigurationErrorsException("Setting \"ElasticConfig:Uri\" not found in appsettings.json");
-    }
-
-    return apiKey;
 }
