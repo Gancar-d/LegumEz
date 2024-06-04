@@ -6,10 +6,5 @@
         Fahrenheit
     }
 
-    public partial record Temperature
-    {
-        public double Valeur { get; set; }
-        public UniteTemperature Unite { get; set; }
-    }
-
+    public partial record Temperature(double Valeur, UniteTemperature Unite);
 }

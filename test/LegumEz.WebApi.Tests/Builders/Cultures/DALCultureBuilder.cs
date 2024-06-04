@@ -33,8 +33,8 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
 
         public DALCultureBuilder WithDefaultValidConditionGermination()
         {
-            var temperatureMinimale = new Temperature() { Valeur = 10, Unite = UniteTemperature.Celsius };
-            var temperatureOptimale = new Temperature() { Valeur = 20, Unite = UniteTemperature.Celsius };
+            var temperatureMinimale = new Temperature(10, UniteTemperature.Celsius);
+            var temperatureOptimale = new Temperature(20, UniteTemperature.Celsius);
             var tempsDeLevee = new Temps() { Valeur = 1, Unite = UniteDeTemps.Jours };
 
             _conditionGermination = new ConditionGermination()
@@ -49,8 +49,8 @@ namespace LegumEz.WebApi.Tests.Builders.Cultures
         
         public DALCultureBuilder WithDefaultValidConditionCroissance()
         {
-            var temperatureMinimale = new Temperature() { Valeur = 10, Unite = UniteTemperature.Celsius };
-            var temperatureOptimale = new Temperature() { Valeur = 20, Unite = UniteTemperature.Celsius };
+            var temperatureMinimale = new Temperature(10, UniteTemperature.Celsius);
+            var temperatureOptimale = new Temperature(20, UniteTemperature.Celsius);
             var tempsDeCroissance = new Temps() { Valeur = 1, Unite = UniteDeTemps.Mois };
 
             _conditionCroissance = new ConditionCroissance()

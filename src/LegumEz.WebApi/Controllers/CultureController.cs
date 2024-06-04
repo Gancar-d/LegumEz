@@ -33,7 +33,7 @@ namespace LegumEz.WebApi.Controllers
             return Ok(responseData);
         }
 
-        [HttpGet("{cultureId}")]
+        [HttpGet("{cultureId:guid}")]
         public ActionResult<DetailedCultureDto> GetCulture(Guid cultureId)
         {
             var culture = _accessCulture.FromId(cultureId);
@@ -42,7 +42,7 @@ namespace LegumEz.WebApi.Controllers
             return Ok(responseData);
         }
 
-        [HttpGet("{cultureId}/{localisation}/MoisPlantation")]
+        [HttpGet("{cultureId:guid}/{ville}/MoisPlantation")]
         public ActionResult<int> GetMoisPlantation(Guid cultureId, string ville)
         {
             var cultureToPlant = _accessCulture.FromId(cultureId);
