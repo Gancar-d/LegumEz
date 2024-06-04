@@ -1,21 +1,22 @@
 ﻿using AutoMapper;
-using LegumEz.Domain.Plantation.api.dto;
+using LegumEz.Domain.Plantation;
 using LegumEz.Domain.Plantation.Culture;
 using LegumEz.Domain.SharedKernel;
+using LegumEz.WebApi.DTO;
 
-namespace LegumEz.Domain.Plantation.api.mapping
+namespace LegumEz.WebApi.Mapping
 {
     public class PlantationDomainProfile : Profile
     {
         public PlantationDomainProfile()
         {
-            CreateMap<Culture.Culture, SimpleCultureDto>();
-            CreateMap<Culture.Culture, DetailedCultureDto>();
+            CreateMap<Domain.Plantation.Culture.Culture, SimpleCultureDto>();
+            CreateMap<Domain.Plantation.Culture.Culture, DetailedCultureDto>();
             CreateMap<ConditionCroissance, ConditionCroissanceDto>();
             CreateMap<ConditionGermination, ConditionGerminationDto>();
             CreateMap<Temperature, TemperatureDto>();
             CreateMap<Temps, TempsDto>();
-            CreateMap<Meteo.PredictionMeteo, PredictionMeteo>();
+            CreateMap<Domain.Meteo.PredictionMeteo, PredictionMeteo>();
         }
     }
 }

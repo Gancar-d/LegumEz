@@ -1,10 +1,10 @@
 using System.Configuration;
 using LegumEz.Application.Meteo.Configuration;
-using LegumEz.Domain.Plantation.api.mapping;
 using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
 using LegumEz.Infrastructure.Persistance.Seeder;
 using LegumEz.WebApi;
+using LegumEz.WebApi.Mapping;
 using LegumEz.WebApi.Middlewares;
 using Serilog;
 using Serilog.Events;

@@ -1,7 +1,7 @@
 using AutoMapper;
 using LegumEz.Domain.Plantation;
 using LegumEz.Domain.Plantation.api;
-using LegumEz.Domain.Plantation.api.dto;
+using LegumEz.WebApi.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LegumEz.WebApi.Controllers

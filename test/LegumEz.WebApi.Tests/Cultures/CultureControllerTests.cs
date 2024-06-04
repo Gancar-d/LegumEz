@@ -1,10 +1,10 @@
 using AutoMapper;
 using FluentAssertions;
 using FluentAssertions.Execution;
-using LegumEz.Domain.Plantation.api.dto;
 using LegumEz.Infrastructure.Persistance.DAL.Cultures;
 using LegumEz.Infrastructure.Persistance.Exceptions;
 using LegumEz.WebApi.Controllers;
+using LegumEz.WebApi.DTO;
 using LegumEz.WebApi.Tests.ActionResultHelpers;
 using LegumEz.WebApi.Tests.Builders.Cultures;
 using LegumEz.WebApi.Tests.Builders.DbContext;
@@ -138,27 +138,19 @@ namespace LegumEz.WebApi.Tests.Cultures
             var temperatureOptimale = new TemperatureDto() { Valeur = 20, Unite = UniteTemperature.Celsius };
             var tempsDeLevee = new TempsDto() { Valeur = 1, Unite = UniteDeTemps.Jours };
             var tempsDeCroissance = new TempsDto() { Valeur = 1, Unite = UniteDeTemps.Mois };
-            
-            var conditionDeGermination = new ConditionGerminationDto()
-            {
-                TemperatureMinimale = temperatureMinimale,
-                TemperatureOptimale = temperatureOptimale,
-                TempsDeLevee = tempsDeLevee
-            };
 
-            var conditionDeCroissance = new ConditionCroissanceDto()
-            {
-                TemperatureMinimale = temperatureMinimale,
-                TemperatureOptimale = temperatureOptimale,
-                TempsDeCroissance = tempsDeCroissance
-            };
+            var conditionDeGermination = 
+                new ConditionGerminationDto(temperatureMinimale, temperatureOptimale, tempsDeLevee);
+
+            var conditionDeCroissance =
+                new ConditionCroissanceDto(temperatureMinimale, temperatureOptimale, tempsDeCroissance);
+
+            var expectedCulture = new DetailedCultureDto(
+                _requestedCultureId,
+                "Carotte",
+                conditionDeGermination,
+                conditionDeCroissance);
             
-            var expectedCulture = new DetailedCultureDto() {
-                Id = _requestedCultureId, 
-                Nom = "Carotte",
-                ConditionCroissance = conditionDeCroissance,
-                ConditionGermination = conditionDeGermination
-            };
             return expectedCulture;
         }
         

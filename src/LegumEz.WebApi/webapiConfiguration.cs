@@ -13,5 +13,6 @@ public static class webapiConfiguration
     private static void ConfigureServices(this IServiceCollection services)
     {
         services.AddScoped<IOptimizePlantation, PlantationOptimizer>();
+        services.AddScoped<IAccessCulture, CultureAccessor>();
     }
 }
