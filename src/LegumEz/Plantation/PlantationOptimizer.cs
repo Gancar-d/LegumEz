@@ -3,7 +3,7 @@ using LegumEz.Domain.Plantation.spi;
 
 namespace LegumEz.Domain.Plantation;
 
-internal class PlantationOptimizer : OptimizePlantation
+public class PlantationOptimizer : OptimizePlantation
 {
     private readonly GetPredictionMeteo _getPredictionMeteo;
     

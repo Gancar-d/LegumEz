@@ -3,7 +3,7 @@ using LegumEz.Domain.Plantation.spi;
 
 namespace LegumEz.Domain.Plantation;
 
-internal class CultureAccessor : AccessCulture
+public class CultureAccessor : AccessCulture
 {
     private readonly ICultureRepository _cultureRepository;
     

@@ -20,18 +20,21 @@ namespace LegumEz.WebApi.Tests.Cultures
 {
     public class CultureControllerShould
     {
-        private readonly ILogger<CultureController> _logger;
-        private readonly IMapper _mapper;
-
         private readonly Guid _requestedCultureId;
         private readonly Guid _invalidRequestedCultureId;
+        private readonly CultureController _cultureController;
 
         public CultureControllerShould()
         {
-            _logger = new LoggerBuilder<CultureController>().Build();
-            _mapper = MapperBuilder.Build();
             _requestedCultureId = Guid.NewGuid();
             _invalidRequestedCultureId = Guid.NewGuid();
+
+            var logger = new LoggerBuilder<CultureController>().Build();
+            var mapper = MapperBuilder.Build();
+            var plantationOptimizer = new PlantationOptimizerBuilder().Build();
+            var cultureAccessor = new CultureAccessorBuilder().WithInMemoryDatabase().Build();
+
+            _cultureController = new CultureController(logger, mapper, plantationOptimizer, cultureAccessor);
             
             InitDb();
         }
@@ -74,9 +77,6 @@ namespace LegumEz.WebApi.Tests.Cultures
         public void Return_all_Culture_stored_in_database()
         {
             //-- Arrange ----------------------------------------------------------
-            var plantation = new PlantationBuilder().WithInMemoryDbContext().Build();
-            var cultureController = new CultureController(_logger, _mapper, plantation);
-
             var expectedCultures = new List<SimpleCultureDto>
             {
                 new SimpleCultureDto(Guid.NewGuid(), "Tomate"),
@@ -85,7 +85,7 @@ namespace LegumEz.WebApi.Tests.Cultures
             };
 
             //-- Act --------------------------------------------------------------
-            var response = cultureController.GetCultures();
+            var response = _cultureController.GetCultures();
 
             //-- Assert -----------------------------------------------------------
             CheckThatCulturesAreReturned(expectedCultures, response);
@@ -95,14 +95,10 @@ namespace LegumEz.WebApi.Tests.Cultures
         public void Return_expected_Culture_giving_Id()
         {
             //-- Arrange ----------------------------------------------------------
-            var plantation = new PlantationBuilder().WithInMemoryDbContext().Build();
-
-            var cultureController = new CultureController(_logger, _mapper, plantation);
-
             var expectedCulture = CreateExpectedCulture();
 
             //-- Act --------------------------------------------------------------
-            var response = cultureController.GetCulture(_requestedCultureId);
+            var response = _cultureController.GetCulture(_requestedCultureId);
 
             //-- Assert -----------------------------------------------------------
             CheckThatACultureIsReturnedGivingId(response, expectedCulture);
@@ -113,15 +109,11 @@ namespace LegumEz.WebApi.Tests.Cultures
         public void Return_best_Periode_giving_a_culture_Id_and_a_Localisation()
         {
             //-- Arrange ----------------------------------------------------------
-            var plantation = new PlantationBuilder().WithInMemoryDbContext().Build();
-            
-            var cultureController = new CultureController(_logger, _mapper, plantation);
-
             const string requestedLocalisation = "Montpellier";
             const int expectedMoisPlantation = 4;
             
             //-- Act --------------------------------------------------------------
-            var response = cultureController.GetMoisPlantation(_requestedCultureId, requestedLocalisation);
+            var response = _cultureController.GetMoisPlantation(_requestedCultureId, requestedLocalisation);
 
             //-- Assert -----------------------------------------------------------
             CheckThatReturnedPeriodeIsExpectedOne(response, expectedMoisPlantation);
@@ -130,14 +122,9 @@ namespace LegumEz.WebApi.Tests.Cultures
         [Fact]
         public void Throw_EntityNotFoundException_giving_non_existent_culture_Id()
         {
-            //-- Arrange ----------------------------------------------------------
-            var plantation = new PlantationBuilder().WithInMemoryDbContext().Build();
-            
-            var cultureController = new CultureController(_logger, _mapper, plantation);
-
             //-- Act --------------------------------------------------------------
             var action =
-                () => cultureController.GetCulture(_invalidRequestedCultureId);
+                () => _cultureController.GetCulture(_invalidRequestedCultureId);
 
             action.Should()
                 .Throw<EntityNotFoundException>()

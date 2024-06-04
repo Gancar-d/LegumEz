@@ -1,6 +1,6 @@
 ﻿namespace LegumEz.Domain.Plantation
 {
-    public record Culture
+    public class Culture
     {
         public Culture(Guid id, string nom, ConditionGermination conditionGermination, ConditionCroissance conditionCroissance)
         {
