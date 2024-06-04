@@ -9,7 +9,7 @@ namespace LegumEz.WebApi.Tests.Builders.Plantation;
 
 internal class PlantationOptimizerBuilder
 {
-    public OptimizePlantation Build()
+    public IOptimizePlantation Build()
     {
         var getPredictionMeteoForPlantation = GetPredictionMeteoForPlantationBuilder.Build();
         

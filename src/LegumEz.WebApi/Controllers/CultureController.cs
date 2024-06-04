@@ -11,13 +11,13 @@ namespace LegumEz.WebApi.Controllers
     public class CultureController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly OptimizePlantation _optimizePlantation;
-        private readonly AccessCulture _accessCulture;
+        private readonly IOptimizePlantation _optimizePlantation;
+        private readonly IAccessCulture _accessCulture;
 
         public CultureController(ILogger<CultureController> logger,
             IMapper mapper,
-            OptimizePlantation optimizePlantation,
-            AccessCulture accessCulture)
+            IOptimizePlantation optimizePlantation,
+            IAccessCulture accessCulture)
         {
             _mapper = mapper;
             _optimizePlantation = optimizePlantation;

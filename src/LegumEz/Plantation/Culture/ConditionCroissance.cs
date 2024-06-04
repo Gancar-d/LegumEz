@@ -1,6 +1,6 @@
 ﻿using LegumEz.Domain.SharedKernel;
 
-namespace LegumEz.Domain.Plantation
+namespace LegumEz.Domain.Plantation.Culture
 {
     public record ConditionCroissance
     {
@@ -20,11 +20,6 @@ namespace LegumEz.Domain.Plantation
                 throw new ArgumentNullException(nameof(temperatureOptimale), "La rempérature optimale est requise");
             }
 
-            if (tempsDeCroissance is null)
-            {
-                throw new ArgumentNullException(nameof(tempsDeCroissance), "Le temps de croissance est requis");
-            }
-
             if (temperatureMinimale >= temperatureOptimale)
             {
                 throw new ArgumentException("La température minimale doit être strictement inférieure à la température optimale", nameof(temperatureMinimale));
@@ -32,7 +27,7 @@ namespace LegumEz.Domain.Plantation
 
             TemperatureMinimale = temperatureMinimale;
             TemperatureOptimale = temperatureOptimale;
-            TempsDeCroissance = tempsDeCroissance;
+            TempsDeCroissance = tempsDeCroissance ?? throw new ArgumentNullException(nameof(tempsDeCroissance), "Le temps de croissance est requis");
         }
     }
 }

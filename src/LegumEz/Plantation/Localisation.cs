@@ -1,11 +1,6 @@
 namespace LegumEz.Domain.Plantation;
 
-public record Localisation
+public record Localisation(string Ville)
 {
-    public Localisation(string ville)
-    {
-        Ville = ville;
-    }
-    
-    public string Ville { get; init; }
-}
+    public string Ville { get; } = Ville ?? throw new ArgumentNullException(nameof(Ville), "La ville est requise");
+};

@@ -3,16 +3,16 @@ using LegumEz.Domain.Plantation.spi;
 
 namespace LegumEz.Domain.Plantation;
 
-public class PlantationOptimizer : OptimizePlantation
+public class PlantationOptimizer : IOptimizePlantation
 {
-    private readonly GetPredictionMeteo _getPredictionMeteo;
+    private readonly IGetPredictionMeteo _getPredictionMeteo;
     
-    public PlantationOptimizer(GetPredictionMeteo getPredictionMeteo)
+    public PlantationOptimizer(IGetPredictionMeteo getPredictionMeteo)
     {
         _getPredictionMeteo = getPredictionMeteo;
     }
 
-    public Mois GetMoisOptimalDePlantationByLocalisation(Culture cultureAPlanter, Localisation localisation)
+    public Mois GetMoisOptimalDePlantationByLocalisation(Culture.Culture cultureAPlanter, Localisation localisation)
     {
         var predictionsMeteos = _getPredictionMeteo.ForLocalisation(localisation);
         

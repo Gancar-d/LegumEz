@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LegumEz.Domain.Plantation.Culture;
 
 namespace LegumEz.Infrastructure.Persistance.Mapping
 {
@@ -6,11 +7,11 @@ namespace LegumEz.Infrastructure.Persistance.Mapping
     {
         public InfrastructureProfile()
         {
-            CreateMap<DAL.Cultures.Culture, Domain.Plantation.Culture>();
-            CreateMap<DAL.Cultures.ConditionCroissance, Domain.Plantation.ConditionCroissance>();
-            CreateMap<DAL.Cultures.ConditionGermination, Domain.Plantation.ConditionGermination>();
+            CreateMap<DAL.Cultures.Culture, Culture>();
+            CreateMap<DAL.Cultures.ConditionCroissance, ConditionCroissance>();
+            CreateMap<DAL.Cultures.ConditionGermination, ConditionGermination>();
             CreateMap<DAL.Cultures.Temperature, Domain.SharedKernel.Temperature>();
-            CreateMap<DAL.Cultures.Temps, Domain.Plantation.Temps>();
+            CreateMap<DAL.Cultures.Temps, Temps>();
         }
     }
 }

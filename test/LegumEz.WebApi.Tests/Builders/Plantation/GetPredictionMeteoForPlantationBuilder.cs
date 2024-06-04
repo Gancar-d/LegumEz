@@ -1,9 +1,9 @@
-using LegumEz.Domain.Repository.AntiCorruptionLayer;
+using LegumEz.Domain.AntiCorruptionLayer;
 using LegumEz.WebApi.Tests.Builders.Meteo;
 
 namespace LegumEz.WebApi.Tests.Builders.Plantation;
 
-public class GetPredictionMeteoForPlantationBuilder
+public static class GetPredictionMeteoForPlantationBuilder
 {
     public static GetPredictionMeteoForPlantation Build()
     {

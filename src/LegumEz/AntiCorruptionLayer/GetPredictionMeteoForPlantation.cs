@@ -1,13 +1,14 @@
+using LegumEz.Domain.Meteo.spi;
 using LegumEz.Domain.Plantation;
 using LegumEz.Domain.Plantation.spi;
 
-namespace LegumEz.Domain.Repository.AntiCorruptionLayer;
+namespace LegumEz.Domain.AntiCorruptionLayer;
 
-public class GetPredictionMeteoForPlantation : GetPredictionMeteo
+public class GetPredictionMeteoForPlantation : IGetPredictionMeteo
 {
-    private readonly Meteo.spi.GetPredictionMeteo _getPredictionMeteo;
+    private readonly GetPredictionMeteo _getPredictionMeteo;
     
-    public GetPredictionMeteoForPlantation(Meteo.spi.GetPredictionMeteo getPredictionMeteo)
+    public GetPredictionMeteoForPlantation(GetPredictionMeteo getPredictionMeteo)
     {
         _getPredictionMeteo = getPredictionMeteo;
     }
@@ -18,16 +19,16 @@ public class GetPredictionMeteoForPlantation : GetPredictionMeteo
 
         foreach (var predictionMeteo in predictionsMeteos)
         {
-            yield return convertPredictionMeteoForMeteo(predictionMeteo);
+            yield return ConvertPredictionMeteoForMeteo(predictionMeteo);
         }
     }
 
-    private Meteo.Localisation ConvertLocalisationForPlantation(Localisation localisation)
+    private static Meteo.Localisation ConvertLocalisationForPlantation(Localisation localisation)
     {
         return new Meteo.Localisation(localisation.Ville);
     }
 
-    private PredictionMeteo convertPredictionMeteoForMeteo(Meteo.PredictionMeteo predictionMeteo)
+    private static PredictionMeteo ConvertPredictionMeteoForMeteo(Meteo.PredictionMeteo predictionMeteo)
     {
         return new PredictionMeteo(predictionMeteo.TemperatureMoyenne, predictionMeteo.Jour);
     }

@@ -12,6 +12,6 @@ public static class webapiConfiguration
 
     private static void ConfigureServices(this IServiceCollection services)
     {
-        services.AddScoped<OptimizePlantation, PlantationOptimizer>();
+        services.AddScoped<IOptimizePlantation, PlantationOptimizer>();
     }
 }

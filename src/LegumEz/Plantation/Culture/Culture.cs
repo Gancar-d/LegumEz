@@ -1,4 +1,4 @@
-﻿namespace LegumEz.Domain.Plantation
+﻿namespace LegumEz.Domain.Plantation.Culture
 {
     public class Culture
     {
@@ -16,7 +16,7 @@
 
         public Mois GetMoisOptimalDePlantation(IEnumerable<PredictionMeteo> predictionsMeteos)
         {
-            var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Jour.Month);
+            var predictionsMeteosByMonth = predictionsMeteos.GroupBy(x => x.Journee.Month);
             
             var moisEtTemperatureProche = predictionsMeteosByMonth.Select(group =>
             {

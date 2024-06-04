@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LegumEz.Domain.Plantation.api.dto;
+using LegumEz.Domain.Plantation.Culture;
 using LegumEz.Domain.SharedKernel;
 
 namespace LegumEz.Domain.Plantation.api.mapping
@@ -8,8 +9,8 @@ namespace LegumEz.Domain.Plantation.api.mapping
     {
         public PlantationDomainProfile()
         {
-            CreateMap<Culture, SimpleCultureDto>();
-            CreateMap<Culture, DetailedCultureDto>();
+            CreateMap<Culture.Culture, SimpleCultureDto>();
+            CreateMap<Culture.Culture, DetailedCultureDto>();
             CreateMap<ConditionCroissance, ConditionCroissanceDto>();
             CreateMap<ConditionGermination, ConditionGerminationDto>();
             CreateMap<Temperature, TemperatureDto>();

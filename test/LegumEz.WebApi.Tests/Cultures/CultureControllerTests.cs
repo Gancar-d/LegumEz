@@ -13,7 +13,7 @@ using LegumEz.WebApi.Tests.Builders.Mapper;
 using LegumEz.WebApi.Tests.Builders.Plantation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using UniteDeTemps = LegumEz.Domain.Plantation.UniteDeTemps;
+using UniteDeTemps = LegumEz.Domain.Plantation.Culture.UniteDeTemps;
 using UniteTemperature = LegumEz.Domain.SharedKernel.UniteTemperature;
 
 namespace LegumEz.WebApi.Tests.Cultures

@@ -3,7 +3,7 @@ using LegumEz.Domain.Plantation.spi;
 
 namespace LegumEz.Domain.Plantation;
 
-public class CultureAccessor : AccessCulture
+public class CultureAccessor : IAccessCulture
 {
     private readonly ICultureRepository _cultureRepository;
     
@@ -12,12 +12,12 @@ public class CultureAccessor : AccessCulture
         _cultureRepository = cultureRepository;
     }
     
-    public IEnumerable<Culture> All()
+    public IEnumerable<Culture.Culture> All()
     {
         return _cultureRepository.FindAll();
     }
 
-    public Culture FromId(Guid cultureId)
+    public Culture.Culture FromId(Guid cultureId)
     {
         return _cultureRepository.FindById(cultureId);
     }

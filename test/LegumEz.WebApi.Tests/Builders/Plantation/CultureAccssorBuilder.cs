@@ -20,7 +20,7 @@ public class CultureAccessorBuilder
         return this;
     }
     
-    public AccessCulture Build()
+    public IAccessCulture Build()
     {
         if (_dbContext is null)
         {

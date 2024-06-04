@@ -1,4 +1,5 @@
 ﻿using LegumEz.Domain.Plantation;
+using LegumEz.Domain.Plantation.Culture;
 
 namespace LegumEz.Domain.Tests.TempsTests
 {
