@@ -81,6 +81,8 @@ void ConfigureLogger(LoggerConfiguration loggerConfiguration)
         .MinimumLevel.Override("Microsoft.AspNetCore.Hosting", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.AspNetCore.Mvc", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.AspNetCore.Routing", LogEventLevel.Warning)
+        .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning)
+        
         .Enrich.WithHttpRequestId()
         .Enrich.WithHttpRequestClientHostIP()
         .Enrich.WithHttpRequestNumber()
