@@ -1,4 +1,6 @@
 using LegumEz.Domain.AntiCorruptionLayer;
+using LegumEz.Domain.Meteo;
+using LegumEz.Domain.Meteo.api;
 using LegumEz.Domain.Plantation;
 using LegumEz.Domain.Plantation.api;
 using LegumEz.Domain.Plantation.spi;
@@ -17,5 +19,6 @@ public static class webapiConfiguration
         services.AddScoped<IOptimizePlantation, PlantationOptimizer>();
         services.AddScoped<IAccessCulture, CultureAccessor>();
         services.AddScoped<IGetPredictionMeteo, GetPredictionMeteoForPlantation>();
+        services.AddScoped<IMeteoForecast, MeteoForecaster>();
     }
 }

@@ -15,6 +15,7 @@ namespace LegumEz.WebApi.Tests.Builders.Mapper
             var configuration = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new PlantationDomainProfile());
+                cfg.AddProfile(new MeteoDomainProfile());
                 cfg.AddProfile(new Infrastructure.Persistance.Mapping.InfrastructureProfile());
                 cfg.AddProfile(new MeteoApiProfile());
             });

@@ -42,6 +42,11 @@ public class GetPredictionMeteo : Domain.Meteo.spi.GetPredictionMeteo
         return predictionMeteos;
     }
 
+    public IEnumerable<PredictionMeteo> FromDateRange(Localisation localisation, DateTime startDate, DateTime endDate)
+    {
+        return GetPredictionsMeteoByDateAndLocalisation(localisation, startDate.ToString("yyyy-MM-dd"), endDate.ToString("yyyy-MM-dd"));
+    }
+
     private IEnumerable<PredictionMeteo> GetPredictionsMeteoByDateAndLocalisation(Localisation localisation, string startDate, string endDate)
     {
         var httpclient = _httpClientFactory.CreateClient("MeteoApi");

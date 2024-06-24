@@ -7,7 +7,7 @@ public static class GetPredictionMeteoForPlantationBuilder
 {
     public static GetPredictionMeteoForPlantation Build()
     {
-        var getPredictionMeteo = new GetPredictionMeteoBuilder().WithPredictionsMeteo().Build();
+        var getPredictionMeteo = new GetPredictionMeteoBuilder().WithPredictionsMeteoForLocalisation().Build();
         
         return new GetPredictionMeteoForPlantation(getPredictionMeteo);
     }

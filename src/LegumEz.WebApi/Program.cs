@@ -21,7 +21,7 @@ try
 
     ConfigureSerilog(builder);
     
-    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(PlantationDomainProfile));
+    builder.Services.AddAutoMapper(typeof(InfrastructureProfile), typeof(PlantationDomainProfile), typeof(MeteoDomainProfile));
     builder.Services.ConfigureWebapi();
     builder.Services.ConfigureInfrastructure(builder.Configuration);
     builder.Services.ConfigureMeteoHttpClient();
