@@ -1,0 +1,55 @@
+dans le dossier data/plants
+
+Aggreger tous les fichiers json en un seul
+
+echo "[" > combined.json
+for file in *.json; do
+  cat "$file" >> combined.json
+  echo "," >> combined.json
+done
+truncate -s-2 combined.json
+echo "]" >> combined.json
+
+----------------------------------------------
+
+Supprimer les propriétés non voulues.
+
+jq 'map(del(.content, .edibleParts, .plantings, .soilImpact, .species, .sun, .yield, .hardinessZone, .germination.rate))' combined.json > cleaned_combined.json
+
+----------------------------------------------
+
+renommer les propriétés avec les noms de LegumEz
+
+jq 'map({
+    Nom: .name,
+    ConditionGermination: {
+        TempsDeLevee: {
+                Valeur: .harvest.duration.max,
+                Unite: (.harvest.duration.unit | if . == "week" then 0 elif . == "days" then 1 else null end)
+    	},
+	TemperatureMinimale :{
+                Valeur : 10,
+                Unite : 0
+	},
+	TemperatureOptimale : {
+                Valeur : 20,
+                Unite : 0
+	}
+    },
+    ConditionCroissance: {
+        TempsDeCroissance: {
+                Valeur: .germination.duration.max,
+                Unite: (.germination.duration.unit | if . == "week" then 0 elif . == "days" then 1 else null end)
+        },
+	TemperatureMinimale :{
+                Valeur : 10,
+                Unite : 0
+	},
+	TemperatureOptimale : {
+                Valeur : 20,
+                Unite : 0
+	}
+    }
+} + del(.name, .germination, .germination.duration, .germination.duration.max, .germination.duration.unit, .harvest, .harvest.duration, .harvest.duration.max, .harvest.duration.unit))' cleaned_combined.json > renamed_combined.json
+
+----------------------------------------------

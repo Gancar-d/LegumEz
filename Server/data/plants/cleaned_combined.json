@@ -1,0 +1,707 @@
+[
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 8,
+        "min": 8,
+        "unit": "week"
+      }
+    },
+    "name": "artichoke",
+    "plantingSeasons": [
+      "fall"
+    ]
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 8,
+        "min": 8,
+        "unit": "week"
+      }
+    },
+    "name": "asparagus"
+  },
+  {
+    "cultivationCategory": "herb",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 14,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 12,
+        "min": 10,
+        "unit": "week"
+      }
+    },
+    "name": "basil"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "beet"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 28,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 17,
+        "min": 17,
+        "unit": "week"
+      }
+    },
+    "name": "bell pepper"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 6,
+        "min": 4,
+        "unit": "week"
+      }
+    },
+    "name": "broccoli"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 12,
+        "min": 12,
+        "unit": "week"
+      }
+    },
+    "name": "brussel sprout"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "cabbage"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 6,
+        "min": 4,
+        "unit": "week"
+      }
+    },
+    "name": "carrot"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "cauliflower"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 28,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "celery"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 28,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 17,
+        "min": 17,
+        "unit": "week"
+      }
+    },
+    "name": "chili pepper"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 24,
+        "min": 24,
+        "unit": "week"
+      }
+    },
+    "name": "collard green"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 12,
+        "min": 12,
+        "unit": "week"
+      }
+    },
+    "name": "common bean"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 14,
+        "min": 7,
+        "unit": "week"
+      }
+    },
+    "name": "cucumber"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 28,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 13,
+        "min": 13,
+        "unit": "week"
+      }
+    },
+    "name": "eggplant"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "garlic"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 3,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "head lettuce"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 19,
+        "min": 15,
+        "unit": "week"
+      }
+    },
+    "name": "kale"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 3,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "leaf lettuce"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "leek"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 8,
+        "min": 8,
+        "unit": "week"
+      }
+    },
+    "name": "mustard"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 13,
+        "min": 13,
+        "unit": "week"
+      }
+    },
+    "name": "okra"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "onion"
+  },
+  {
+    "cultivationCategory": "herb",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 26,
+        "min": 17,
+        "unit": "week"
+      }
+    },
+    "name": "parsley"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "parsnip"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 12,
+        "min": 12,
+        "unit": "week"
+      }
+    },
+    "name": "pea"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 12,
+        "min": 12,
+        "unit": "week"
+      }
+    },
+    "name": "pole pea"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "potato"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "pumpkin"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "radish"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "rhubarb"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 21,
+        "min": 8,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "shallot"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "spinach"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 18,
+        "min": 16,
+        "unit": "week"
+      }
+    },
+    "name": "squash"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "sweet corn"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 48,
+        "min": 40,
+        "unit": "week"
+      }
+    },
+    "name": "swiss chard"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 1,
+        "min": 1,
+        "unit": "week"
+      }
+    },
+    "name": "tomato"
+  },
+  {
+    "cultivationCategory": "vegetable",
+    "germination": {
+      "duration": {
+        "max": 7,
+        "min": 1,
+        "unit": "days"
+      }
+    },
+    "harvest": {
+      "duration": {
+        "max": 13,
+        "min": 13,
+        "unit": "week"
+      }
+    },
+    "name": "turnip"
+  }
+]

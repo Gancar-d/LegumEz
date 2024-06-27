@@ -1,0 +1,7622 @@
+[
+{
+    "content": {
+        "water": {
+            "value": 0.8494,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.47,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0327,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0015,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1051,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.054,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0099,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00044,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000128,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0006,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0009,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0037,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00094,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000049,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000117,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 7.2e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 6.6e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001046,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000116,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.8e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 1.2e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000019,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.48e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00036,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00064,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+        "cultivationCategory": "vegetable", 
+        "edibleParts": [
+            "flower bud"
+        ], 
+        "germination": {
+            "duration": {
+                "max": 21, 
+                "min": 8, 
+                "unit": "days"
+            }, 
+            "rate": 0.7
+        }, 
+        "hardinessZone": {
+            "max": 10, 
+            "min": 8
+        }, 
+        "harvest": {
+            "duration": {
+                "max": 8, 
+                "min": 8, 
+                "unit": "week"
+            }
+        }, 
+        "name": "artichoke",
+    "plantingSeasons": [
+        "fall"
+    ], 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 12, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 1, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 72, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Cynara scolymus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "value" : 1011,
+        "unit": "grams per square meter"
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9322,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.2,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.022,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0012,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0388,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.021,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0188,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00024,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000214,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00052,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00202,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000054,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000056,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.00000143,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000141,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000978,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9.1e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 5.2e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000456,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000113,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 4.16e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.0005,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable",
+    "edibleParts": [
+        "stem shoots"
+    ],
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 8, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 8, 
+            "min": 8, 
+            "unit": "week"
+        }
+    }, 
+    "name": "asparagus", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 12, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 1, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 72, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Asparagus officinalis", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "value" : 303,
+        "unit": "grams per square meter"
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9206,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.23,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0315,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0064,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0265,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.016,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.003,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00177,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000317,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00064,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00056,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00295,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00004,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000081,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00018,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 3.4e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 7.6e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000902,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000155,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.8e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00003168,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000004148,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00041,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00088,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00389,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "herb", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 14, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 9
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 12, 
+            "min": 10, 
+            "unit": "week"
+        }
+    }, 
+    "name": "basil", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1.5, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Ocimum basilicum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 1953
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8758,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.43,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0161,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0017,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0956,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.028,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0676,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00016,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00325,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00078,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000035,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000049,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 3.1e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000334,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 6.7e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000109,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 2.4e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2e-9,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00027,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.0006,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf", 
+        "root"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.65
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 6
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "beet", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 9, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Cynara scolymus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 1660
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9389,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.2,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0086,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0017,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0464,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.017,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.024,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000034,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00175,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00003,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000804,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5.7e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 2.8e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.0000048,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000224,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.0e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000216,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000037,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 7.4e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00058,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00062,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 28, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.55
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 1
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 17, 
+            "min": 17, 
+            "unit": "week"
+        }
+    }, 
+    "name": "bell pepper", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 7, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 11, 
+                "min": 9, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 12, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Capsicum annuum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 3418
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.893,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.34,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0282,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0037,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0664,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.026,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.017,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00047,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000073,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00021,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00066,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00316,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00033,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000041,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000892,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 7.1e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000117,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000639,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000175,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.3e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000372,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000078,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000001016,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00039,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00038,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "flower bud"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 6
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 6, 
+            "min": 4, 
+            "unit": "week"
+        }
+    }, 
+    "name": "broccoli", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 3, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 9, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 15, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 1445
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.86,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.43,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0338,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.003,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0895,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.038,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.022,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00042,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000014,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00069,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00389,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000042,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00085,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.00000139,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000745,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000219,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.1e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000456,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000088,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.00000177,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00062,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00153,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable",
+    "edibleParts": [
+      "bud"
+    ],
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 7
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 12, 
+            "min": 12, 
+            "unit": "week"
+        }
+    }, 
+    "name": "brussel sprout", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 3, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 11, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 18, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "value" : 1792,
+        "unit": "grams per square meter"
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9218,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.25,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0128,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.058,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.025,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.032,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000047,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00026,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0017,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00018,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000018,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000366,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 6.1e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000234,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000124,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 4.3e-7,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 6.0e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000015,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 7.6e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00034,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "cabbage", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 3, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 9, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 15, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 3520
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8829,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.41,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0093,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0024,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0958,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.028,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0474,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00033,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000003,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00035,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0032,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00069,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000024,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000059,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 6.6e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 5.8e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000983,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000138,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.9e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.0001002,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000066,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.32e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00037,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00117,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "root"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.55
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 6, 
+            "min": 4, 
+            "unit": "week"
+        }
+    }, 
+    "name": "carrot", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 11, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 3, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Daucus carota", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 3720
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9207,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.25,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0192,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0028,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0497,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.02,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0191,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00022,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000042,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00015,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00044,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00299,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.0003,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000027,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000482,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 6e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000507,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000184,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 5.7e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.55e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00064,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00015,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "flower bud"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "cauliflower", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 12, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 72, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 1748
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9543,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.16,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0069,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0017,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0297,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.016,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0183,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00024,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0026,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.0008,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000031,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 2.1e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 5.7e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.0000032,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 7.4e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 3.6e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000264,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000027,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2.93e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00042,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00079,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf stem"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 28, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.55
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "celery", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 4, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 12, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Apium graveolens", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 7421
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8802,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.4,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0187,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0044,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0881,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.015,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.053,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000103,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00043,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00322,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000026,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.001437,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 7.2e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 8.6e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001244,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000506,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 2.3e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000576,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000069,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.4e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00042,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00024,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00239,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 28, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.55
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 1
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 17, 
+            "min": 17, 
+            "unit": "week"
+        }
+    }, 
+    "name": "chili pepper", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 7, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 12, 
+                "min": 9, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 12, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Capsicum annuum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 244
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9055,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.3,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0245,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0042,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0569,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.036,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0046,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00145,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000019,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00168,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000353,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5.4e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000742,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000165,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000166,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00003996,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000226,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000005108,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00055,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.0003,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00201,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 7
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 24, 
+            "min": 24, 
+            "unit": "week"
+        }
+    }, 
+    "name": "collard green", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 12, 
+                "min": 12, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 12, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "unit": "grams per square meter", 
+        "value": 7812
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.1102,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 3.41,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.216,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0142,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.6236,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.155,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0212,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00123,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000502,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00171,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00352,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.01483,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000365,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000193,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001955,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000286,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000444,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000021,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 5.6e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00366,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00123,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.0061,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable",
+    "edibleParts": [
+        "seed"
+    ],
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 12, 
+            "min": 12, 
+            "unit": "week"
+        }
+    }, 
+    "name": "common bean", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Phaseolus vulgaris", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    },
+    "yield" : {
+        "value": 630,
+        "units": "grams per square foot"
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9523,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.15,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0065,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0011,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0363,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.005,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0167,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00016,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000028,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00024,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00147,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000028,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 2.7e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3.3e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 9.8e-7,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 7e-8,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 6.0e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 3e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.64e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00037,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 14, 
+            "min": 7, 
+            "unit": "week"
+        }
+    }, 
+    "name": "cucumber", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 10, 
+                "min": 7, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 12, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Cucumis sativus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 2207
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9241,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.24,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0101,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0019,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.057,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.034,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0235,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000024,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0023,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000016,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000022,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 3.8e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3.7e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000649,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 8.4e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 2.2e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 1.2e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.000003,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 3.5e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00034,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00016,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00076,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "eggplant"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 28, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 13, 
+            "min": 13, 
+            "unit": "week"
+        }
+    }, 
+    "name": "eggplant", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 5, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 12, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 11, 
+                "min": 10, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 18, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Solanum melongena", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 2690
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.5858,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 1.49,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0636,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.005,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.3306,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.021,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.01,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00181,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000017,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00153,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00401,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000116,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000312,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.0000011,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000007,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00001235,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 3e-8,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.7e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00089,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00249,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "bulb"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.5
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "garlic", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 44, 
+                "min": 17, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Allium sativum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 1626
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9563,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.13,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0135,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0022,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0223,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.011,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0094,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00035,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000124,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00033,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00238,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000037,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5.7e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 6.2e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000357,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 8.2e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 7.3e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00001992,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000018,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000001023,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00029,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00117,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.8
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 3, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "head lettuce", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 0.1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1.5, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 11, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 8, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Lactuca sativa", 
+    "sun": {
+        "max": "part sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 3589
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8446,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.5,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.033,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.007,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1001,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.02,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00135,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000017,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00034,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00056,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00447,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00043,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000044,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.0012,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.0000011,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000271,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 2.9e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00009228,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.00000817,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00091,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00052,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00338,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 7
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 19, 
+            "min": 15, 
+            "unit": "week"
+        }
+    }, 
+    "name": "kale", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 9, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 15, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica oleracea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 781
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9498,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.15,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0136,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0015,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0287,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.013,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0078,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00036,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000086,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00029,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00194,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00028,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000018,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000092,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 7e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000375,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 3.8e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.0000444,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000022,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000001263,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00006,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00082,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.8
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 3, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "leaf lettuce", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 0.1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1.5, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 12, 
+                "min": 6, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 8, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Lactuca sativa", 
+    "sun": {
+        "max": "part sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 2500
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.83,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.61,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.015,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.003,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1415,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.018,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.039,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00058,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000021,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00028,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00035,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0018,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000012,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 6e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000004,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000233,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.4e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000996,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000092,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 4.7e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00004,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00166,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf sheath"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 6
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "leek", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 12, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 19, 
+                "min": 19, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Allium porrum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 9765
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.908,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.26,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.027,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.002,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.049,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.033,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.016,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00103,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000146,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00043,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00354,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.0007,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.0000011,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.0000018,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000187,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.000063,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000201,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000004973,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00092,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00038,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 8, 
+            "min": 8, 
+            "unit": "week"
+        }
+    }, 
+    "name": "mustard", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 5, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica juncea", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 8788
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9017,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.31,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.02,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0703,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.032,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.012,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00081,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00057,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00063,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00303,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000006,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000211,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 6e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000215,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 8.8e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000228,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000036,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 5.3e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00026,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00027,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.5
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 13, 
+            "min": 13, 
+            "unit": "week"
+        }
+    }, 
+    "name": "okra", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 7, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 12, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Abelmoschus esculentus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 146
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8911,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.4,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.011,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0934,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.017,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0424,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000021,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00029,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00146,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00004,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000017,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000074,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 4.6e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 2.7e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000116,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.0000012,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.9e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 2.0e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 4e-9,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00042,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "bulb"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 3
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "onion", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 10, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 0.1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 17, 
+                "min": 14, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Allium cepa", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "units": "grams per square foot", 
+        "value": 4448
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.8771,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.36,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0297,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0079,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0633,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.033,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0085,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00138,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000062,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0005,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00058,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00554,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00056,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000107,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00133,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 8.6e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 9.8e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001313,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000152,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00005052,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000075,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.0000164,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00132,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00295,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00124,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "herb", 
+    "edibleParts": [
+        "leaft"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 6
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 26, 
+            "min": 17, 
+            "unit": "week"
+        }
+    }, 
+    "name": "parsley", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 0, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 0.1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 10, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Petroselinum crispum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 21971
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.7953,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.75,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.012,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.003,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1799,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.049,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.048,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00036,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000059,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00029,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00071,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00375,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000059,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 5e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000007,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.7e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000149,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2.25e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0005,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00112,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00047,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "root"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "parsnip", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 14, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Pastinaca sativa", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 7324
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.7886,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.81,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0542,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.004,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1445,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.051,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0567,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000147,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00033,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00108,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00244,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000124,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.00000266,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000132,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.0000209,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000169,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.5e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000456,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2.48e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00071,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00035,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00187,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "seed"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.8
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 3
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 12, 
+            "min": 12, 
+            "unit": "week"
+        }
+    }, 
+    "name": "pea", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 10, 
+                "min": 8, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy giver", 
+    "species": "Pisum sativum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 332
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.7886,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.81,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0542,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.004,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1445,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.051,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0567,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000147,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00033,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00108,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00244,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000124,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.00000266,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000132,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.0000209,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000169,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 6.5e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000456,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2.48e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00071,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00035,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00187,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "seed"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.8
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 3
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 12, 
+            "min": 12, 
+            "unit": "week"
+        }
+    }, 
+    "name": "pole pea", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 2, 
+                "min": 1, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 11, 
+                "min": 10, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy giver", 
+    "species": "Pisum sativum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 332
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.7934,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.77,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0202,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0009,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.1747,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.022,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0078,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000078,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00023,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00057,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00421,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00006,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000028,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000197,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3.2e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00001054,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000295,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.6e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 1.0e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.8e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00026,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00043,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "tuber"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": null
+    }, 
+    "hardinessZone": {
+        "max": 7, 
+        "min": 1
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "potato", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 9, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 17, 
+                "min": 9, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 9, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Solanum tuberosum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 3842
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.916,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.26,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.01,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.065,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.005,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0136,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00021,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000008,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00044,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0034,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00001,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000032,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.0000011,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000006,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 6.1e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.6e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00004428,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000106,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.1e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00052,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 3
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "pumpkin", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 16, 
+                "min": 14, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 18, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Cucurbita maxima", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 2441
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9527,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.16,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0068,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.034,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.016,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0186,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00025,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000034,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00233,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00039,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000028,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000148,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 1.2e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3.8e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000254,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 7.1e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 2.5e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1.3e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00048,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "root"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "radish", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 2, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 9, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Rhaphanus sativus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 4882
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9361,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.21,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.009,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.002,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0454,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.018,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.011,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00086,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000022,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00288,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00004,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000001,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 2.0e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000003,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 2.4e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 7e-8,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 6.0e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000027,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 2.93e-7,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00053,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00039,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00099,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf stem"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "rhubarb", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 6, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 1, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 24, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Rheum rhabarbarum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 2441
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.798,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.72,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.025,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.168,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.032,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0787,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00037,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000012,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00021,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.0006,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00334,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00012,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.000004,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00008,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 6e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 2.0e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000002,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000345,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 3.4e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 8e-9,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00017,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00014,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00039,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "bulb"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 21, 
+            "min": 8, 
+            "unit": "days"
+        }, 
+        "rate": 0.7
+    }, 
+    "hardinessZone": {
+        "max": 9, 
+        "min": 3
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "shallot", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 26, 
+                "min": 17, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Allium cepa", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part shade"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 2441
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.914,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.23,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0286,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0039,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0363,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.022,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0042,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00099,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000271,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00079,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00049,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00558,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00079,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000053,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000281,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 7.8e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 0.00000189,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000724,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000195,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 0.00000194,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00005628,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000203,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.000004829,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00063,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00165,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.6
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 8
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "spinach", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 7, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 6, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Cynara scolymus", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 1445
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9428,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.19,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0101,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0027,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0388,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.01,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0353,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00021,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000044,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.0002,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00032,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00222,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000029,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000193,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 5.1e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 4.1e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000448,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 0.00000104,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.9e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 9.6e-7,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000013,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 3.2e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00093,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00013,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00082,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 1
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 18, 
+            "min": 16, 
+            "unit": "week"
+        }
+    }, 
+    "name": "squash", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 2, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 6, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 15, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Cucurbita moschata", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 1465
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.7605,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.86,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0327,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.0135,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.187,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.02,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0626,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00002,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000052,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00037,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00089,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.0027,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00015,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000046,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000068,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 0.00000155,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 5.5e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.0000177,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9.3e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 4.2e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000108,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 7e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 3e-9,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00325,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00432,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00487,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "seed"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 8, 
+        "min": 4
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "sweet corn", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 5, 
+                "min": 3, 
+                "unit": "day"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 6, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 9, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 15, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Zea mays", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 1245
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9266,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.19,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.018,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.002,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0374,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.016,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.011,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.00051,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000018,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00081,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00046,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00379,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00213,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000036,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.0003,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000004,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9.9e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.4e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00003672,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000189,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 0.0000083,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.0003,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.0004,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.0007,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.65
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 6
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 48, 
+            "min": 40, 
+            "unit": "week"
+        }
+    }, 
+    "name": "swiss chard", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 8, 
+                "min": 7, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 8, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Beta vulgaris ", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 9765
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9452,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.18,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.0088,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.002,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0389,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.012,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.0263,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.0001,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.0000027,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00024,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00237,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00005,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000017,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.000137,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 3.7e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 1.9e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.00000594,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 8.0e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.5e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0.00000504,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 0.0000054,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 7.9e-8,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00028,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00031,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00083,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "fruit"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.75
+    }, 
+    "hardinessZone": {
+        "max": 10, 
+        "min": 2
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 1, 
+            "min": 1, 
+            "unit": "week"
+        }
+    }, 
+    "name": "tomato", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 1, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 3, 
+                "min": 2, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 10, 
+                "min": 5, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 4, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "light feeder", 
+    "species": "Lycopersicon esculentum", 
+    "sun": {
+        "max": "full sun", 
+        "min": "full sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 4882
+    }
+},
+{
+    "content": {
+        "water": {
+            "value": 0.9187,
+            "unit": "grams"
+        },
+        "energy": {
+            "value": 0.28,
+            "unit": "kilocalories"
+        },
+        "protein": {
+            "value": 0.009,
+            "unit": "grams"
+        },
+        "fat": {
+            "value": 0.001,
+            "unit": "grams"
+        },
+        "carbohydrate": {
+            "value": 0.0643,
+            "unit": "grams"
+        },
+        "dietary fiber": {
+            "value": 0.018,
+            "unit": "grams"
+        },
+        "sugars": {
+            "value": 0.038,
+            "unit": "grams"
+        },
+        "calcium": {
+            "value": 0.0003,
+            "unit": "grams"
+        },
+        "iron": {
+            "value": 0.000003,
+            "unit": "grams"
+        },
+        "magnesium": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "phosphorus": {
+            "value": 0.00027,
+            "unit": "grams"
+        },
+        "potassium": {
+            "value": 0.00191,
+            "unit": "grams"
+        },
+        "sodium": {
+            "value": 0.00067,
+            "unit": "grams"
+        },
+        "zinc": {
+            "value": 0.0000027,
+            "unit": "grams"
+        },
+        "vitamin c": {
+            "value": 0.00021,
+            "unit": "grams"
+        },
+        "thiamin": {
+            "value": 4.0e-7,
+            "unit": "grams"
+        },
+        "riboflavin": {
+            "value": 3e-7,
+            "unit": "grams"
+        },
+        "niacin": {
+            "value": 0.000004,
+            "unit": "grams"
+        },
+        "vitamin b-6": {
+            "value": 9e-7,
+            "unit": "grams"
+        },
+        "dietary folate": {
+            "value": 1.5e-7,
+            "unit": "grams"
+        },
+        "vitamin b-12": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin a": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin e": {
+            "value": 3e-7,
+            "unit": "grams"
+        },
+        "vitamin d2 and d3": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin d": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "vitamin k": {
+            "value": 1e-9,
+            "unit": "grams"
+        },
+        "saturated fat": {
+            "value": 0.00011,
+            "unit": "grams"
+        },
+        "monounsaturated fat": {
+            "value": 0.00006,
+            "unit": "grams"
+        },
+        "polyunsaturated fat": {
+            "value": 0.00053,
+            "unit": "grams"
+        },
+        "cholesterol": {
+            "value": 0,
+            "unit": "grams"
+        },
+        "caffeine": {
+            "value": 0,
+            "unit": "grams"
+        }
+    },
+    "cultivationCategory": "vegetable", 
+    "edibleParts": [
+        "leaf", 
+        "root"
+    ], 
+    "germination": {
+        "duration": {
+            "max": 7, 
+            "min": 1, 
+            "unit": "days"
+        }, 
+        "rate": 0.8
+    }, 
+    "hardinessZone": {
+        "max": 11, 
+        "min": 9
+    }, 
+    "harvest": {
+        "duration": {
+            "max": 13, 
+            "min": 13, 
+            "unit": "week"
+        }
+    }, 
+    "name": "turnip", 
+    "plantings": [
+        {
+            "depth": {
+                "size": 2, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 4, 
+                "min": 3, 
+                "unit": "week"
+            }, 
+            "spacing": {
+                "size": 1, 
+                "unit": "inch"
+            }
+        }, 
+        {
+            "depth": {
+                "size": 3, 
+                "unit": "inch"
+            }, 
+            "duration": {
+                "max": 13, 
+                "min": 10, 
+                "unit": "year"
+            }, 
+            "spacing": {
+                "size": 18, 
+                "unit": "inch"
+            }
+        }
+    ], 
+    "soilImpact": "heavy feeder", 
+    "species": "Brassica rapa", 
+    "sun": {
+        "max": "full sun", 
+        "min": "part sun"
+    }, 
+    "yield": {
+        "unit": "grams per meter", 
+        "value": 9765
+    }
+}]
