@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
 
 namespace LegumEz.Infrastructure.Persistance.DAL.Cultures.Configuration
 {
@@ -17,6 +18,10 @@ namespace LegumEz.Infrastructure.Persistance.DAL.Cultures.Configuration
             builder.ToTable(nameof(Culture));
 
             builder.HasKey(c => c.Id);
+            builder.Property(c => c.Id)
+                .ValueGeneratedOnAdd()
+                .HasValueGenerator<GuidValueGenerator>()
+                .IsRequired();
 
             builder.Property(c => c.Nom);
         }
@@ -28,7 +33,7 @@ namespace LegumEz.Infrastructure.Persistance.DAL.Cultures.Configuration
                 condition.ToTable(nameof(ConditionCroissance));
 
                 condition.HasKey(c => c.CultureId);
-
+                
                 condition.WithOwner().HasForeignKey(nameof(ConditionCroissance.CultureId));
 
                 condition.OwnsOne(c => c.TemperatureMinimale);

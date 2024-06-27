@@ -1,42 +1,1253 @@
 [
-    {
-        "Id" : "6d489fd1-d354-461e-a996-7d031bf1525a",
-        "Nom" : "Carotte",
-        "ConditionCroissance" :
-        {
-            "TemperatureMinimale" :
-            {
-                "Valeur" : 10,
-                "Unite" : 0
-            },
-            "TemperatureOptimale" : 
-            {
-                "Valeur" : 20,
-                "Unite" : 0
-            },
-            "TempsDeCroissance" :
-            {
-                "Valeur" : 1,
-                "Unite" : 1
-            }
-        },
-        "ConditionGermination" :
-        {
-            "TemperatureMinimale" :
-            {
-                "Valeur" : 10,
-                "Unite" : 0
-            },
-            "TemperatureOptimale" : 
-            {
-                "Valeur" : 20,
-                "Unite" : 0
-            },
-            "TempsDeLevee" :
-            {
-                "Valeur" : 10,
-                "Unite" : 0
-            }
-        }
-    }
+  {
+    "Nom": "artichoke",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 15,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 21,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 5,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 22,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable",
+    "plantingSeasons": [
+      "fall"
+    ]
+  },
+  {
+    "Nom": "asparagus",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "basil",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "herb"
+  },
+  {
+    "Nom": "beet",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "bell pepper", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 17,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 18,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 26,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 28,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 24,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "broccoli",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 6,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "brussel sprout",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "cabbage",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "carrot", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 6,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 7,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 9,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 18,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "cauliflower",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "celery",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 28,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "chili pepper",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 17,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 28,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "collard green",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 24,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "common bean",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "cucumber",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 14,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "eggplant", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 13,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 21,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 27,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 28,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 25,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "garlic", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 15,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "head lettuce",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 3,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "kale",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 19,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "leaf lettuce",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 3,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "leek", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 19,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 2,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "mustard",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "okra",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 13,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "onion", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 15,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "parsley",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 26,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "herb"
+  },
+  {
+    "Nom": "parsnip",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "pea",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "pole pea",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "potato", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 7,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "pumpkin",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "radish",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "rhubarb",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "shallot",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 21,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "spinach", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 7,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 18,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 5,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 18,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "squash", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 18,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 21,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 25,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 8,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 24,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "sweet corn",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "swiss chard",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 48,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "tomato", 
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 1,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 16,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 25,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 12,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 22,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  },
+  {
+    "Nom": "turnip",
+    "ConditionGermination": {
+      "TempsDeLevee": {
+        "Valeur": 13,
+        "Unite": 0
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "ConditionCroissance": {
+      "TempsDeCroissance": {
+        "Valeur": 7,
+        "Unite": 1
+      },
+      "TemperatureMinimale": {
+        "Valeur": 10,
+        "Unite": 0
+      },
+      "TemperatureOptimale": {
+        "Valeur": 20,
+        "Unite": 0
+      }
+    },
+    "cultivationCategory": "vegetable"
+  }
 ]

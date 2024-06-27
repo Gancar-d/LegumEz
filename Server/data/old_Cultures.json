@@ -1,0 +1,42 @@
+[
+    {
+        "Id" : "6d489fd1-d354-461e-a996-7d031bf1525a",
+        "Nom" : "Carotte",
+        "ConditionCroissance" :
+        {
+            "TemperatureMinimale" :
+            {
+                "Valeur" : 10,
+                "Unite" : 0
+            },
+            "TemperatureOptimale" : 
+            {
+                "Valeur" : 20,
+                "Unite" : 0
+            },
+            "TempsDeCroissance" :
+            {
+                "Valeur" : 1,
+                "Unite" : 1
+            }
+        },
+        "ConditionGermination" :
+        {
+            "TemperatureMinimale" :
+            {
+                "Valeur" : 10,
+                "Unite" : 0
+            },
+            "TemperatureOptimale" : 
+            {
+                "Valeur" : 20,
+                "Unite" : 0
+            },
+            "TempsDeLevee" :
+            {
+                "Valeur" : 10,
+                "Unite" : 0
+            }
+        }
+    }
+]
