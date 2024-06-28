@@ -1,0 +1,26 @@
+<div class="relative w-full max-w-xs">
+    <label class="text-gray-400 ml-2">Culture</label>
+    <input 
+      type="text" 
+      class="my_input"
+      [placeholder]="placeHolder"
+      [(ngModel)]="query"
+      (input)="updateQuery()"
+    />
+
+    @if (suggestions.length && query != '')
+    {
+        <ul class="absolute left-0 right-0 top-full bg-white border border-gray-300 mt-1 rounded-md z-10">
+            @for (suggestion of suggestions; track suggestion)
+            {
+                <li 
+                  class="px-4 py-2 cursor-pointer hover:bg-gray-200"
+                  (click)="selectSuggestion(suggestion)">
+                  {{ suggestion }}
+                </li>
+            }
+        </ul>
+
+    }
+  </div>
+  
