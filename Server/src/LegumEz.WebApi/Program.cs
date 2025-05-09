@@ -1,4 +1,3 @@
-using System.Configuration;
 using LegumEz.Application.Meteo.Configuration;
 using LegumEz.Infrastructure.Configuration;
 using LegumEz.Infrastructure.Persistance.Mapping;
@@ -8,7 +7,6 @@ using LegumEz.WebApi.Mapping;
 using LegumEz.WebApi.Middlewares;
 using Serilog;
 using Serilog.Events;
-using Serilog.Sinks.Elasticsearch;
 
 try
 {
@@ -69,7 +67,7 @@ void ConfigureSerilog(WebApplicationBuilder webApplicationBuilder)
     webApplicationBuilder.Services.AddLogging(loggingBuilder =>
         loggingBuilder.AddSerilog(dispose: true));
 
-    webApplicationBuilder.Host.UseSerilog((context, services, configuration) =>
+    webApplicationBuilder.Host.UseSerilog((_, _, configuration) =>
     {
         ConfigureLogger(configuration);
     }, true);
@@ -81,18 +79,17 @@ void ConfigureLogger(LoggerConfiguration loggerConfiguration)
         .MinimumLevel.Override("Microsoft.AspNetCore.Hosting", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.AspNetCore.Mvc", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.AspNetCore.Routing", LogEventLevel.Warning)
-        .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning)
-        
-        .Enrich.WithHttpRequestId()
-        .Enrich.WithHttpRequestClientHostIP()
-        .Enrich.WithHttpRequestNumber()
-        .Enrich.WithUserName()
+        //.MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning)
+        .Enrich.WithHttpRequestId()!
+        .Enrich.WithHttpRequestClientHostIP()!
+        .Enrich.WithHttpRequestNumber()!
+        .Enrich.WithUserName()!
         .WriteTo.Console(outputTemplate: "{Timestamp} [{Level}] {Properties:j} - {Message}{NewLine}{Exception}");
 
 #if DEBUG
 
-    loggerConfiguration
-        .MinimumLevel.Debug();
+    // loggerConfiguration
+    //     .MinimumLevel.Debug();
 
 #endif
 }
